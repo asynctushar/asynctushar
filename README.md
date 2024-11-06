@@ -1,16 +1,33 @@
-## Hi there 👋
+# Hi there, I'm Tushar Biswas! 👋
 
-<!--
-**asynctushar/asynctushar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🚀 **Passionate MERN Stack & Front-End Developer**
 
-Here are some ideas to get you started:
+I'm a MERN stack developer with expertise in creating responsive, high-performance web applications. I bring a full-stack approach to my projects, blending back-end logic with polished front-end interfaces to build scalable, user-centered solutions.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🛠️ **Tech Stack**
+
+- **Languages**: JavaScript, TypeScript
+- **Front-End**: React, Next.js, Redux Toolkit, Tailwind CSS, Material UI, Shadcn, HTML/CSS
+- **Back-End**: Node.js, Express.js, MongoDB
+- **Tools & Services**: Git, VSCode, Firebase, Stripe, Vercel
+
+### 🔥 **Current Focus**
+
+- **Exploring Advanced Web Performance**: Optimizing apps with Next.js for speed and scalability
+- **Creating Engaging Interfaces**: Building with Shadcn and Material UI for smooth, intuitive user experiences
+
+### 📊 **GitHub Stats**
+
+![Tushar's GitHub stats](https://github-readme-stats.vercel.app/api?username=asynctushar&show_icons=true&theme=tokyonight)
+
+### 🌐 **Connect with Me**
+
+- LinkedIn: [linkedin.com/in/asynctushar](https://linkedin.com/in/asynctushar)
+
+### 💡 **Fun Fact**
+
+I'm a continuous learner who loves experimenting with new web technologies and bringing ideas to life with code.
+
+---
+
+Thanks for visiting my profile! Let's build something impactful together. ✨
