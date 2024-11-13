@@ -20,9 +20,7 @@ I'm a MERN stack developer with expertise in creating responsive, high-performan
 
 ![Tushar's GitHub stats](https://github-readme-stats.vercel.app/api?username=asynctushar&show_icons=true&theme=tokyonight)
 
-### 🌐 **Connect with Me**
 
-- LinkedIn: [linkedin.com/in/asynctushar](https://linkedin.com/in/asynctushar)
 
 ### 💡 **Fun Fact**
 
