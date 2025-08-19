@@ -1,14 +1,11 @@
-import Navbar from "@/components/navbar";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Code, Layout, Server, Wrench } from "lucide-react";
+import { Code, Layout, Server, Wrench, Briefcase, GraduationCap } from "lucide-react";
 
 const HomePage = () => {
 	return (
-		<div className="px-2 sm:px-4 md:px-8">
-			<Navbar />
-
+		<>
 			{/* Hero Section */}
 			<section className="flex flex-col items-center justify-center py-20 text-center">
 				<p className="text-base sm:text-lg text-muted-foreground">Hi, I'm Tushar 👋</p>
@@ -229,7 +226,7 @@ const HomePage = () => {
 								width={28}
 								height={28}
 							/>
-							<span>Git</span>
+							<span>Github</span>
 							<Image
 								src="https://skillicons.dev/icons?i=vscode"
 								alt="VSCode"
@@ -275,27 +272,52 @@ const HomePage = () => {
 					</div>
 				</div>
 			</section>
-
-			{/* Footer */}
-			<footer className="border-t py-8 text-center text-sm text-muted-foreground">
-				<div className="flex justify-center gap-6 mb-3">
-					<Link href="https://github.com/asynctushar" target="_blank">
-						GitHub
-					</Link>
-					<Link href="https://linkedin.com/in/asynctushar" target="_blank">
-						LinkedIn
-					</Link>
-					<Link href="https://fiverr.com/asynctushar" target="_blank">
-						Fiverr
-					</Link>
-					<Link href="https://upwork.com/freelancers/asynctushar" target="_blank">
-						Upwork
-					</Link>
-					<Link href="mailto:tusarbiswas@gmail.com">Email</Link>
+			{/* Experience Section */}
+			<section className="container mx-auto py-16">
+				<h2 className="mb-8 text-3xl font-semibold text-center">Experience</h2>
+				<div className="max-w-2xl mx-auto space-y-6">
+					<div className="rounded-lg border bg-card p-6 shadow-sm">
+						<div className="flex items-center gap-3 mb-3">
+							<Briefcase className="h-6 w-6 text-primary" />
+							<h3 className="font-semibold">Freelance MERN Stack Developer</h3>
+						</div>
+						<p className="text-sm text-muted-foreground">Fiverr · 2023 - Present</p>
+						<ul className="mt-3 list-disc list-inside text-sm text-muted-foreground space-y-1">
+							<li>
+								Delivered 25+ projects for global clients with Mongodb, Express,
+								React and Node.js
+							</li>
+							<li>
+								Developed full-stack apps including quiz app and chat application.
+							</li>
+							<li>
+								Collaborated with non-technical clients to transform ideas into
+								functional products.
+							</li>
+						</ul>
+					</div>
 				</div>
-				© {new Date().getFullYear()} Tushar Biswas. All rights reserved.
-			</footer>
-		</div>
+			</section>
+
+			{/* Education Section */}
+			<section className="container mx-auto py-16">
+				<h2 className="mb-8 text-3xl font-semibold text-center">Education</h2>
+				<div className="max-w-2xl mx-auto space-y-6">
+					<div className="rounded-lg border bg-card p-6 shadow-sm">
+						<div className="flex items-center gap-3 mb-3">
+							<GraduationCap className="h-6 w-6 text-primary" />
+							<h3 className="font-semibold">B.Sc. in Textile Engineering</h3>
+						</div>
+						<p className="text-sm text-muted-foreground">
+							[Barishal Textile Engineering College] · 2018 - 2022
+						</p>
+						<p className="mt-2 text-sm text-muted-foreground">
+							Coursework: Wet Process Engineering
+						</p>
+					</div>
+				</div>
+			</section>
+		</>
 	);
 };
 
