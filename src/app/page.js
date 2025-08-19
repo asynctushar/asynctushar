@@ -97,6 +97,165 @@ const HomePage = () => {
 				</div>
 			</section>
 
+			{/* Skills / Tech Stack */}
+			<section className="container mx-auto py-20">
+				<h2 className="mb-10 text-3xl font-bold text-center">Tech Stack</h2>
+
+				<div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 text-center">
+					{/* Languages */}
+					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
+						<div className="flex justify-center mb-3">
+							<Code className="h-6 w-6 text-primary" />
+						</div>
+						<h3 className="mb-12 text-xl font-semibold">Languages</h3>
+						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
+							<Image
+								src="https://skillicons.dev/icons?i=js"
+								alt="JavaScript"
+								width={28}
+								height={28}
+							/>
+							<span>JavaScript</span>
+							<Image
+								src="https://skillicons.dev/icons?i=ts"
+								alt="TypeScript"
+								width={28}
+								height={28}
+							/>
+							<span>TypeScript</span>
+						</div>
+					</div>
+
+					{/* Frontend */}
+					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
+						<div className="flex justify-center mb-3">
+							<Layout className="h-6 w-6 text-primary" />
+						</div>
+						<h3 className="mb-12 text-xl font-semibold">Front-End</h3>
+						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
+							<Image
+								src="https://skillicons.dev/icons?i=react"
+								alt="React"
+								width={28}
+								height={28}
+							/>
+							<span>React</span>
+							<Image
+								src="https://skillicons.dev/icons?i=nextjs"
+								alt="Next.js"
+								width={28}
+								height={28}
+							/>
+							<span>Next.js</span>
+							<Image
+								src="https://skillicons.dev/icons?i=redux"
+								alt="Redux"
+								width={28}
+								height={28}
+							/>
+							<span>Redux Toolkit</span>
+							<Image
+								src="https://skillicons.dev/icons?i=tailwind"
+								alt="Tailwind"
+								width={28}
+								height={28}
+							/>
+							<span>Tailwind CSS</span>
+							<Image
+								src="https://skillicons.dev/icons?i=materialui"
+								alt="MUI"
+								width={28}
+								height={28}
+							/>
+							<span>Material UI</span>
+							<Image
+								src="/images/shadcn-ui.png"
+								alt="Shadcn"
+								width={28}
+								height={28}
+							/>
+							<span>Shadcn</span>
+						</div>
+					</div>
+
+					{/* Backend */}
+					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
+						<div className="flex justify-center mb-3">
+							<Server className="h-6 w-6 text-primary" />
+						</div>
+						<h3 className="mb-12 text-xl font-semibold">Back-End</h3>
+						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
+							<Image
+								src="https://skillicons.dev/icons?i=nodejs"
+								alt="Node.js"
+								width={28}
+								height={28}
+							/>
+							<span>Node.js</span>
+							<Image
+								src="https://skillicons.dev/icons?i=express"
+								alt="Express.js"
+								width={28}
+								height={28}
+							/>
+							<span>Express.js</span>
+							<Image
+								src="https://skillicons.dev/icons?i=mongodb"
+								alt="MongoDB"
+								width={28}
+								height={28}
+							/>
+							<span>MongoDB</span>
+						</div>
+					</div>
+
+					{/* Tools & Services */}
+					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
+						<div className="flex justify-center mb-3">
+							<Wrench className="h-6 w-6 text-primary" />
+						</div>
+						<h3 className="mb-12 text-xl font-semibold">Tools & Services</h3>
+						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
+							<Image
+								src="https://skillicons.dev/icons?i=git"
+								alt="Git"
+								width={28}
+								height={28}
+							/>
+							<span>Git</span>
+							<Image
+								src="https://skillicons.dev/icons?i=github"
+								alt="Github"
+								width={28}
+								height={28}
+							/>
+							<span>Git</span>
+							<Image
+								src="https://skillicons.dev/icons?i=vscode"
+								alt="VSCode"
+								width={28}
+								height={28}
+							/>
+							<span>VSCode</span>
+							<Image
+								src="https://skillicons.dev/icons?i=firebase"
+								alt="Firebase"
+								width={28}
+								height={28}
+							/>
+							<span>Firebase</span>
+							<Image
+								src="https://skillicons.dev/icons?i=vercel"
+								alt="Vercel"
+								width={28}
+								height={28}
+							/>
+							<span>Vercel</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			{/* About Me */}
 			<section className="container mx-auto py-16">
 				<div className="max-w-3xl mx-auto text-center">
@@ -117,111 +276,22 @@ const HomePage = () => {
 				</div>
 			</section>
 
-			{/* Skills / Tech Stack */}
-			<section className="container mx-auto py-20">
-				<h2 className="mb-10 text-3xl font-bold text-center">Tech Stack</h2>
-
-				<div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 text-center">
-					{/* Languages */}
-					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
-						<div className="flex justify-center mb-3">
-							<Code className="h-6 w-6 text-primary" />
-						</div>
-						<h3 className="mb-4 text-xl font-semibold">Languages</h3>
-						<div className="flex flex-col gap-3 text-muted-foreground">
-							<span>JavaScript</span>
-							<span>TypeScript</span>
-						</div>
-					</div>
-
-					{/* Frontend */}
-					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
-						<div className="flex justify-center mb-3">
-							<Layout className="h-6 w-6 text-primary" />
-						</div>
-						<h3 className="mb-4 text-xl font-semibold">Front-End</h3>
-						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
-							<Image src="/icons/react.svg" alt="React" width={28} height={28} />
-							<span>React</span>
-							<Image src="/icons/nextjs.svg" alt="Next.js" width={28} height={28} />
-							<span>Next.js</span>
-							<Image src="/icons/redux.svg" alt="Redux" width={28} height={28} />
-							<span>Redux Toolkit</span>
-							<Image
-								src="/icons/tailwind.svg"
-								alt="Tailwind"
-								width={28}
-								height={28}
-							/>
-							<span>Tailwind CSS</span>
-							<Image src="/icons/mui.svg" alt="MUI" width={28} height={28} />
-							<span>Material UI</span>
-							<Image src="/icons/shadcn.svg" alt="Shadcn" width={28} height={28} />
-							<span>Shadcn</span>
-						</div>
-					</div>
-
-					{/* Backend */}
-					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
-						<div className="flex justify-center mb-3">
-							<Server className="h-6 w-6 text-primary" />
-						</div>
-						<h3 className="mb-4 text-xl font-semibold">Back-End</h3>
-						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
-							<Image src="/icons/nodejs.svg" alt="Node.js" width={28} height={28} />
-							<span>Node.js</span>
-							<Image
-								src="/icons/express.svg"
-								alt="Express.js"
-								width={28}
-								height={28}
-							/>
-							<span>Express.js</span>
-							<Image src="/icons/mongodb.svg" alt="MongoDB" width={28} height={28} />
-							<span>MongoDB</span>
-						</div>
-					</div>
-
-					{/* Tools & Services */}
-					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
-						<div className="flex justify-center mb-3">
-							<Wrench className="h-6 w-6 text-primary" />
-						</div>
-						<h3 className="mb-4 text-xl font-semibold">Tools & Services</h3>
-						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
-							<Image src="/icons/git.svg" alt="Git" width={28} height={28} />
-							<span>Git</span>
-							<Image src="/icons/vscode.svg" alt="VSCode" width={28} height={28} />
-							<span>VSCode</span>
-							<Image
-								src="/icons/firebase.svg"
-								alt="Firebase"
-								width={28}
-								height={28}
-							/>
-							<span>Firebase</span>
-							<Image src="/icons/stripe.svg" alt="Stripe" width={28} height={28} />
-							<span>Stripe</span>
-							<Image src="/icons/vercel.svg" alt="Vercel" width={28} height={28} />
-							<span>Vercel</span>
-						</div>
-					</div>
-				</div>
-			</section>
-
 			{/* Footer */}
 			<footer className="border-t py-8 text-center text-sm text-muted-foreground">
 				<div className="flex justify-center gap-6 mb-3">
-					<Link href="https://github.com/yourusername" target="_blank">
+					<Link href="https://github.com/asynctushar" target="_blank">
 						GitHub
 					</Link>
-					<Link href="https://linkedin.com/in/yourusername" target="_blank">
+					<Link href="https://linkedin.com/in/asynctushar" target="_blank">
 						LinkedIn
 					</Link>
-					<Link href="https://fiverr.com/yourusername" target="_blank">
+					<Link href="https://fiverr.com/asynctushar" target="_blank">
 						Fiverr
 					</Link>
-					<Link href="mailto:youremail@example.com">Email</Link>
+					<Link href="https://upwork.com/freelancers/asynctushar" target="_blank">
+						Upwork
+					</Link>
+					<Link href="mailto:tusarbiswas@gmail.com">Email</Link>
 				</div>
 				© {new Date().getFullYear()} Tushar Biswas. All rights reserved.
 			</footer>

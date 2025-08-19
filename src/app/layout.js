@@ -34,7 +34,7 @@ export const metadata = {
 		title: "Tushar Biswas | Full-Stack Developer",
 		description:
 			"Portfolio showcasing projects, skills, and case studies in full-stack development.",
-		url: "https://tusharbiswas.dev", // update when you buy domain
+		url: "https://asynctushar.vercel.app", // update when you buy domain
 		siteName: "Tushar Biswas Portfolio",
 		images: [
 			{
@@ -53,7 +53,7 @@ export const metadata = {
 		description:
 			"Portfolio of Tushar Biswas — React, Next.js, Node.js, and modern web development.",
 		images: ["/og-image.png"],
-		creator: "@your_twitter", // optional
+		creator: "@asynctushar", // optional
 	},
 };
 
@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-				<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
 					{children}
 				</ThemeProvider>
 			</body>
