@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hi there, I'm Tushar Biswas! 👋
 
-## Getting Started
+🚀 **Passionate MERN Stack & Front-End Developer**
 
-First, run the development server:
+I'm a MERN stack developer with expertise in creating responsive, high-performance web applications. I bring a full-stack approach to my projects, blending back-end logic with polished front-end interfaces to build scalable, user-centered solutions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🛠️ **Tech Stack**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   **Languages**: JavaScript, TypeScript
+-   **Front-End**: React, Next.js, Redux Toolkit, Tailwind CSS, Material UI, Shadcn, HTML/CSS
+-   **Back-End**: Node.js, Express.js, MongoDB
+-   **Tools & Services**: Git, VSCode, Firebase, Stripe, Vercel
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🔥 **Current Focus**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-   **Exploring Advanced Web Performance**: Optimizing apps with Next.js for speed and scalability
+-   **Creating Engaging Interfaces**: Building with Shadcn and Material UI for smooth, intuitive user experiences
 
-## Learn More
+### 📊 **GitHub Stats**
 
-To learn more about Next.js, take a look at the following resources:
+![Tushar's GitHub stats](https://github-readme-stats.vercel.app/api?username=asynctushar&show_icons=true&theme=tokyonight)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 💡 **Fun Fact**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+I'm a continuous learner who loves experimenting with new web technologies and bringing ideas to life with code.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thanks for visiting my profile! Let's build something impactful together. ✨
