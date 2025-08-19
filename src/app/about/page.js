@@ -1,6 +1,6 @@
 "use client";
 
-import { Briefcase, GraduationCap, Target, Code } from "lucide-react";
+import { Briefcase, GraduationCap, Target, Code, CloudLightning, Users } from "lucide-react";
 
 export default function AboutPage() {
 	return (
@@ -19,8 +19,8 @@ export default function AboutPage() {
 			</section>
 
 			{/* Highlights / Core Values */}
-			<section className="grid gap-6 md:grid-cols-2 mb-20">
-				<div className="rounded-lg border bg-card p-6 shadow-sm text-center">
+			<section className="grid gap-6 md:grid-cols-4 mb-20">
+				<div className=" mx-auto rounded-lg border bg-card p-6 shadow-sm text-center">
 					<Target className="h-8 w-8 text-primary mx-auto mb-3" />
 					<h3 className="font-semibold mb-2">Problem-Solver</h3>
 					<p className="text-sm text-muted-foreground">
@@ -28,12 +28,31 @@ export default function AboutPage() {
 						solutions.
 					</p>
 				</div>
-				<div className="rounded-lg border bg-card p-6 shadow-sm text-center">
+
+				<div className=" mx-auto rounded-lg border bg-card p-6 shadow-sm text-center">
 					<Code className="h-8 w-8 text-primary mx-auto mb-3" />
 					<h3 className="font-semibold mb-2">Full-Stack Experience</h3>
 					<p className="text-sm text-muted-foreground">
-						While frontend is my focus, I’ve worked with Node.js, Express, and MongoDB
+						While frontend is my focus, I've worked with Node.js, Express, and MongoDB
 						to deliver complete applications.
+					</p>
+				</div>
+
+				<div className=" mx-auto rounded-lg border bg-card p-6 shadow-sm text-center">
+					<CloudLightning className="h-8 w-8 text-primary mx-auto mb-3" />
+					<h3 className="font-semibold mb-2">Fast Learner</h3>
+					<p className="text-sm text-muted-foreground">
+						I pick up new technologies quickly and adapt to evolving project
+						requirements.
+					</p>
+				</div>
+
+				<div className="mx-auto rounded-lg border bg-card p-6 shadow-sm text-center">
+					<Users className="h-8 w-8 text-primary mx-auto mb-3" />
+					<h3 className="font-semibold mb-2">Team Player</h3>
+					<p className="text-sm text-muted-foreground">
+						Collaboration is key, and I thrive in both team-driven and independent work
+						environments.
 					</p>
 				</div>
 			</section>
