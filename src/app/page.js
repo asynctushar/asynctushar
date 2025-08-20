@@ -105,21 +105,29 @@ const HomePage = () => {
 							<Code className="h-6 w-6 text-primary" />
 						</div>
 						<h3 className="mb-12 text-xl font-semibold">Languages</h3>
-						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
-							<Image
-								src="https://skillicons.dev/icons?i=js"
-								alt="JavaScript"
-								width={28}
-								height={28}
-							/>
-							<span>JavaScript</span>
-							<Image
-								src="https://skillicons.dev/icons?i=ts"
-								alt="TypeScript"
-								width={28}
-								height={28}
-							/>
-							<span>TypeScript</span>
+						<div className="flex flex-col gap-4 text-sm text-muted-foreground">
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=js"
+										alt="JavaScript"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>JavaScript</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=ts"
+										alt="TypeScript"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>TypeScript</span>
+							</div>
 						</div>
 					</div>
 
@@ -129,49 +137,73 @@ const HomePage = () => {
 							<Layout className="h-6 w-6 text-primary" />
 						</div>
 						<h3 className="mb-12 text-xl font-semibold">Front-End</h3>
-						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
-							<Image
-								src="https://skillicons.dev/icons?i=react"
-								alt="React"
-								width={28}
-								height={28}
-							/>
-							<span>React</span>
-							<Image
-								src="https://skillicons.dev/icons?i=nextjs"
-								alt="Next.js"
-								width={28}
-								height={28}
-							/>
-							<span>Next.js</span>
-							<Image
-								src="https://skillicons.dev/icons?i=redux"
-								alt="Redux"
-								width={28}
-								height={28}
-							/>
-							<span>Redux Toolkit</span>
-							<Image
-								src="https://skillicons.dev/icons?i=tailwind"
-								alt="Tailwind"
-								width={28}
-								height={28}
-							/>
-							<span>Tailwind CSS</span>
-							<Image
-								src="https://skillicons.dev/icons?i=materialui"
-								alt="MUI"
-								width={28}
-								height={28}
-							/>
-							<span>Material UI</span>
-							<Image
-								src="/images/shadcn-ui.png"
-								alt="Shadcn"
-								width={28}
-								height={28}
-							/>
-							<span>Shadcn</span>
+						<div className="flex flex-col gap-4 text-sm text-muted-foreground">
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=react"
+										alt="React"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>React</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=nextjs"
+										alt="Next.js"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Next.js</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=redux"
+										alt="Redux"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Redux Toolkit</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=tailwind"
+										alt="Tailwind"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Tailwind CSS</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=materialui"
+										alt="MUI"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Material UI</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="/images/shadcn-ui.png"
+										alt="Shadcn"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Shadcn</span>
+							</div>
 						</div>
 					</div>
 
@@ -181,28 +213,52 @@ const HomePage = () => {
 							<Server className="h-6 w-6 text-primary" />
 						</div>
 						<h3 className="mb-12 text-xl font-semibold">Back-End</h3>
-						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
-							<Image
-								src="https://skillicons.dev/icons?i=nodejs"
-								alt="Node.js"
-								width={28}
-								height={28}
-							/>
-							<span>Node.js</span>
-							<Image
-								src="https://skillicons.dev/icons?i=express"
-								alt="Express.js"
-								width={28}
-								height={28}
-							/>
-							<span>Express.js</span>
-							<Image
-								src="https://skillicons.dev/icons?i=mongodb"
-								alt="MongoDB"
-								width={28}
-								height={28}
-							/>
-							<span>MongoDB</span>
+						<div className="flex flex-col gap-4 text-sm text-muted-foreground">
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=nodejs"
+										alt="Node.js"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Node.js</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=express"
+										alt="Express.js"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Express.js</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=mongodb"
+										alt="MongoDB"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>MongoDB</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="/images/socket.png"
+										alt="Shadcn"
+										className="bg-slate-50 rounded-full"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Socket.io</span>
+							</div>
 						</div>
 					</div>
 
@@ -212,42 +268,62 @@ const HomePage = () => {
 							<Wrench className="h-6 w-6 text-primary" />
 						</div>
 						<h3 className="mb-12 text-xl font-semibold">Tools & Services</h3>
-						<div className="grid grid-cols-2 gap-4 place-items-center text-sm text-muted-foreground">
-							<Image
-								src="https://skillicons.dev/icons?i=git"
-								alt="Git"
-								width={28}
-								height={28}
-							/>
-							<span>Git</span>
-							<Image
-								src="https://skillicons.dev/icons?i=github"
-								alt="Github"
-								width={28}
-								height={28}
-							/>
-							<span>Github</span>
-							<Image
-								src="https://skillicons.dev/icons?i=vscode"
-								alt="VSCode"
-								width={28}
-								height={28}
-							/>
-							<span>VSCode</span>
-							<Image
-								src="https://skillicons.dev/icons?i=firebase"
-								alt="Firebase"
-								width={28}
-								height={28}
-							/>
-							<span>Firebase</span>
-							<Image
-								src="https://skillicons.dev/icons?i=vercel"
-								alt="Vercel"
-								width={28}
-								height={28}
-							/>
-							<span>Vercel</span>
+						<div className="flex flex-col gap-4 text-sm text-muted-foreground">
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=git"
+										alt="Git"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Git</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=github"
+										alt="Github"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Github</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=vscode"
+										alt="VSCode"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>VSCode</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=firebase"
+										alt="Firebase"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Firebase</span>
+							</div>
+							<div className="flex items-center gap-6">
+								<div className="flex justify-end w-1/3">
+									<Image
+										src="https://skillicons.dev/icons?i=vercel"
+										alt="Vercel"
+										width={28}
+										height={28}
+									/>
+								</div>
+								<span>Vercel</span>
+							</div>
 						</div>
 					</div>
 				</div>
