@@ -329,25 +329,6 @@ const HomePage = () => {
 				</div>
 			</section>
 
-			{/* About Me */}
-			<section className="container mx-auto py-16">
-				<div className="max-w-3xl mx-auto text-center">
-					<h2 className="mb-4 text-3xl font-semibold">About Me</h2>
-					<p className="text-muted-foreground leading-relaxed text-lg">
-						I’m a passionate frontend developer who loves building scalable and
-						user-friendly web apps. My journey started with freelancing, solving bugs
-						and implementing features, and has grown into developing full-stack projects
-						with modern tools and frameworks.
-						<br /> <br />I focus on crafting clean UIs, smooth user experiences, and
-						writing maintainable code that delivers real impact.
-					</p>
-					<div className="mt-6">
-						<Button asChild>
-							<Link href="/about">Read More</Link>
-						</Button>
-					</div>
-				</div>
-			</section>
 			{/* Experience Section */}
 			<section className="container mx-auto py-16">
 				<h2 className="mb-8 text-3xl font-semibold text-center">Experience</h2>
@@ -390,6 +371,26 @@ const HomePage = () => {
 						<p className="mt-2 text-sm text-muted-foreground">
 							Coursework: Wet Process Engineering
 						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* About Me */}
+			<section className="container mx-auto py-16">
+				<div className="max-w-3xl mx-auto text-center">
+					<h2 className="mb-4 text-3xl font-semibold">About Me</h2>
+					<p className="text-muted-foreground leading-relaxed text-lg">
+						I’m a passionate frontend developer who loves building scalable and
+						user-friendly web apps. My journey started with freelancing, solving bugs
+						and implementing features, and has grown into developing full-stack projects
+						with modern tools and frameworks.
+						<br /> <br />I focus on crafting clean UIs, smooth user experiences, and
+						writing maintainable code that delivers real impact.
+					</p>
+					<div className="mt-6">
+						<Button asChild>
+							<Link href="/about">Read More</Link>
+						</Button>
 					</div>
 				</div>
 			</section>
