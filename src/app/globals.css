@@ -78,13 +78,7 @@
 	--radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--primary: #6366f1; /* lighter indigo for dark */
-		--secondary: #34d399; /* lighter emerald */
-		--accent: #fbbf24; /* lighter amber */
-	}
-}
+
 
 body {
 	font-family: var(--font-sans);
@@ -100,7 +94,7 @@ body {
 	--primary: oklch(0.922 0 0);
 	--primary-foreground: oklch(0.205 0 0);
 	--secondary: oklch(0.269 0 0);
-	--secondary-foreground: oklch(0.985 0 0);
+	--secondary-foreground: oklch(24.88% 0.03794 212.606);
 	--muted: oklch(0.269 0 0);
 	--muted-foreground: oklch(0.708 0 0);
 	--accent: oklch(0.269 0 0);
@@ -124,6 +118,14 @@ body {
 	--sidebar-ring: oklch(0.279 0.041 260.031);
 }
 
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: #6366f1; /* lighter indigo for dark */
+		--secondary: #34d399; /* lighter emerald */
+		--accent: #fbbf24; /* lighter amber */
+	}
+}
+
 @layer base {
 	* {
 		@apply border-border outline-ring/50;
@@ -132,3 +134,4 @@ body {
 		@apply bg-background text-foreground;
 	}
 }
+
