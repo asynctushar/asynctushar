@@ -51,7 +51,7 @@ export default function ProjectsPage() {
 							className="w-full h-40 object-cover rounded-t-lg"
 						/>
 						<div className="p-6">
-							<h3 className="text-xl font-semibold group-hover:text-primary">
+							<h3 className="text-xl font-semibold">
 								{project.title}
 							</h3>
 							<p className="mt-1 text-sm text-muted-foreground">

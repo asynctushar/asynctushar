@@ -199,7 +199,7 @@ export default function CaseStudyPage({ params }) {
 					<a
 						href={project.links.live}
 						target="_blank"
-						className="px-4 py-2 bg-primary text-white rounded-lg shadow hover:opacity-90"
+						className="px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium transition-all shadow hover:bg-primary/90"
 					>
 						Live Project
 					</a>
@@ -208,7 +208,7 @@ export default function CaseStudyPage({ params }) {
 					<a
 						href={project.links.github}
 						target="_blank"
-						className="px-4 py-2 border rounded-lg hover:bg-gray-50"
+						className="px-4 py-2 border rounded-lg text-sm font-medium transition-all bg-background hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50"
 					>
 						GitHub
 					</a>
@@ -217,7 +217,7 @@ export default function CaseStudyPage({ params }) {
 					<a
 						href={project.links.video}
 						target="_blank"
-						className="px-4 py-2 bg-secondary text-white rounded-lg shadow hover:opacity-90"
+						className="px-4 py-2 bg-secondary text-secondary-foreground rounded-lg shadow text-sm font-medium transition-all hover:bg-secondary/80"
 					>
 						Demo Video
 					</a>

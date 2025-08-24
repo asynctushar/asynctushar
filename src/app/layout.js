@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Link from "next/link";
+import Footer from "@/components/footer";
 
 // Fonts
 const geistSans = Geist({
@@ -67,28 +68,7 @@ export default function RootLayout({ children }) {
 					<div className="px-2 sm:px-4 md:px-8">
 						<Navbar />
 						{children}
-						{/* Footer */}
-						<footer className="border-t py-8 text-center text-sm text-muted-foreground">
-							<div className="flex justify-center gap-6 mb-3">
-								<Link href="https://github.com/asynctushar" target="_blank">
-									GitHub
-								</Link>
-								<Link href="https://linkedin.com/in/asynctushar" target="_blank">
-									LinkedIn
-								</Link>
-								<Link href="https://fiverr.com/asynctushar" target="_blank">
-									Fiverr
-								</Link>
-								<Link
-									href="https://upwork.com/freelancers/asynctushar"
-									target="_blank"
-								>
-									Upwork
-								</Link>
-								<Link href="mailto:tusarbiswas@gmail.com">Email</Link>
-							</div>
-							© {new Date().getFullYear()} Tushar Biswas. All rights reserved.
-						</footer>
+						<Footer />
 					</div>
 				</ThemeProvider>
 			</body>
