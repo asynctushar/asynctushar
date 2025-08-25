@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Toaster } from "@/components/ui/sonner";
 
 // Fonts
 const geistSans = Geist({
@@ -68,6 +69,7 @@ export default function RootLayout({ children }) {
 						<Navbar />
 						{children}
 						<Footer />
+						<Toaster richColors position="top-right" duration={3000} closeButton />
 					</div>
 				</ThemeProvider>
 			</body>
