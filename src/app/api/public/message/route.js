@@ -1,5 +1,20 @@
 import nodemailer from "nodemailer";
 
+function setCorsHeaders() {
+    return {
+        "Access-Control-Allow-Origin": "*", // or restrict to specific domain
+        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    };
+}
+
+export async function OPTIONS() {
+    return new Response(null, {
+        status: 204,
+        headers: setCorsHeaders(),
+    });
+}
+
 export async function POST(req) {
     try {
         const body = await req.json();
@@ -65,13 +80,19 @@ Message: ${message || "N/A"}
 
         return new Response(
             JSON.stringify({ success: "Message sent successfully" }),
-            { status: 200 }
+            {
+                status: 200,
+                headers: setCorsHeaders(),
+            }
         );
     } catch (err) {
         console.error("Error sending email:", err);
         return new Response(
             JSON.stringify({ error: "Failed to send message" }),
-            { status: 500 }
+            {
+                status: 500,
+                headers: setCorsHeaders(),
+            }
         );
     }
 }
