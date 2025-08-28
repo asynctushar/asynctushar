@@ -250,8 +250,8 @@ const HomePage = () => {
 							<div className="flex items-center gap-6">
 								<div className="flex justify-end w-1/3">
 									<Image
-										src="/images/socket.png"
-										alt="Shadcn"
+										src="/images/Socket.png"
+										alt="Socket.io"
 										className="bg-slate-50 rounded-full"
 										width={28}
 										height={28}
