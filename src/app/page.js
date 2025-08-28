@@ -380,7 +380,7 @@ const HomePage = () => {
 				<div className="max-w-3xl mx-auto text-center">
 					<h2 className="mb-4 text-3xl font-semibold">About Me</h2>
 					<p className="text-muted-foreground leading-relaxed text-lg">
-						I’m a passionate frontend developer who loves building scalable and
+						I'm a passionate frontend developer who loves building scalable and
 						user-friendly web apps. My journey started with freelancing, solving bugs
 						and implementing features, and has grown into developing full-stack projects
 						with modern tools and frameworks.
