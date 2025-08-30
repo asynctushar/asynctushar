@@ -8,7 +8,7 @@ import "react-medium-image-zoom/dist/styles.css";
 export default async function CaseStudyPage({ params}) {
 	const { project: param } = await params;
 
-	const project = projects.find(project => project.caseStudy === `/case-studies/${param}`);
+	const project = projects.find(project => project.caseStudy === `/details/${param}`);
 	if (!project) return notFound();
 
 	return (

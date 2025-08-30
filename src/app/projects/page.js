@@ -46,7 +46,7 @@ export default function ProjectsPage() {
 									</Button>
 								)}
 								<Button size="sm" variant="secondary" asChild>
-									<Link href={project.caseStudy}>Case Study</Link>
+									<Link href={project.caseStudy}>Details</Link>
 								</Button>
 							</div>
 						</div>
