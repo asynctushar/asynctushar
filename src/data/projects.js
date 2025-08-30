@@ -49,7 +49,7 @@ const projects = [
 	},
 	{
 		title: "Chadbot",
-		type: "Freelance",
+		type: "Freelance Project",
 		description: "Implemented booking system, payment gateway, and role-based dashboard.",
 		tech: ["React", "Node.js", "Python", "Firebase", "Redis", "Socket.io", "MongoDB",],
 		problem: "Booking hotels online often lacks real-time updates and smooth UX.",
@@ -70,7 +70,7 @@ const projects = [
 	},
 	{
 		title: "MINE SAT PLATFORM",
-		type: "Freelance",
+		type: "Freelance Project",
 		description: "Implemented booking system, payment gateway, and role-based dashboard.",
 		tech: ["React", "Node.js", "MongoDB", "Passport.js", "Material-Tailwind", "Redux Toolkit", "Tailwind"],
 		problem: "Booking hotels online often lacks real-time updates and smooth UX.",
@@ -91,7 +91,7 @@ const projects = [
 	},
 	{
 		title: "Viste Guest",
-		type: "Freelance",
+		type: "Freelance Project",
 		description: "Implemented booking system, payment gateway, and role-based dashboard.",
 		tech: ["React", "Node.js", "MongoDB", "Multer", "Material Tailwind", "Redux Toolkit", "Tailwind",],
 		problem: "Booking hotels online often lacks real-time updates and smooth UX.",

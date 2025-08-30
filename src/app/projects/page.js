@@ -11,21 +11,21 @@ export default function ProjectsPage() {
 				{projects.map((project, idx) => (
 					<div
 						key={idx}
-						className="group rounded-lg border bg-card shadow-sm transition hover:shadow-md"
+						className="group rounded-lg border bg-card shadow-sm transition hover:shadow-md flex flex-col"
 					>
 						<img
 							src={project.thumbnail}
 							alt={project.title}
 							className="w-full h-40 object-cover rounded-t-lg"
 						/>
-						<div className="p-6">
+						<div className="p-6 flex-1 flex flex-col">
 							<h3 className="text-xl font-semibold">
 								{project.title}
 							</h3>
-							<p className="mt-1 text-sm text-muted-foreground">
+							<p className="mt-1 text-sm text-muted-foreground flex-1">
 								{project.description}
 							</p>
-							<p className="mt-2 text-xs text-muted-foreground">
+							<p className="mt-3 text-xs text-muted-foreground">
 								{project.tech.join(", ")}
 							</p>
 							<p className="mt-2 text-xs font-medium text-primary">{project.type}</p>
