@@ -231,8 +231,8 @@ const HomePage = () => {
 							<div className="flex items-center gap-6">
 								<div className="flex justify-end w-1/3">
 									<Image
-										src="/images/socket.png"
-										alt="Shadcn"
+										src="/images/Socket.png"
+										alt="Socket.io"
 										className="bg-slate-50 rounded-full"
 										width={28}
 										height={28}
@@ -361,7 +361,7 @@ const HomePage = () => {
 				<div className="max-w-3xl mx-auto text-center">
 					<h2 className="mb-4 text-3xl font-semibold">About Me</h2>
 					<p className="text-muted-foreground leading-relaxed text-lg">
-						I’m a passionate frontend developer who loves building scalable and
+						I'm a passionate frontend developer who loves building scalable and
 						user-friendly web apps. My journey started with freelancing, solving bugs
 						and implementing features, and has grown into developing full-stack projects
 						with modern tools and frameworks.
