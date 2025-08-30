@@ -1,38 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
-const projects = [
-	{
-		title: "SpotHotel",
-		type: "Personal Project",
-		description: "A full-stack hotel booking platform with real-time availability & payments.",
-		tech: ["Next.js", "Prisma", "PostgreSQL", "Tailwind"],
-		liveUrl: "https://spothotel.vercel.app",
-		githubUrl: "https://github.com/yourusername/spothotel",
-		caseStudy: "/case-studies/spothotel",
-		thumbnail: "/projects/spothotel.png",
-	},
-	{
-		title: "TrackZone",
-		type: "Personal Project",
-		description: "Project management tool built following full SDLC: SRS → Figma → Code.",
-		tech: ["React", "Tailwind", "Node.js"],
-		liveUrl: "https://trackzone.vercel.app",
-		githubUrl: "https://github.com/yourusername/trackzone",
-		caseStudy: "/case-studies/trackzone",
-		thumbnail: "/projects/trackzone.png",
-	},
-	{
-		title: "Client Feature Development",
-		type: "Freelance",
-		description: "Implemented booking system, payment gateway, and role-based dashboard.",
-		tech: ["Next.js", "MongoDB", "Stripe"],
-		liveUrl: "https://clientproject.com",
-		githubUrl: null, // not available
-		caseStudy: "/case-studies/clientproject",
-		thumbnail: "/projects/client.png",
-	},
-];
+import projects from "@/data/projects";
 
 export default function ProjectsPage() {
 	return (

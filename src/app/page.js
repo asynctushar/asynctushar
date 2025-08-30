@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Code, Layout, Server, Wrench, Briefcase, GraduationCap } from "lucide-react";
+import projects from "@/data/projects";
 
 const HomePage = () => {
 	return (
@@ -42,49 +43,29 @@ const HomePage = () => {
 			<section className="container mx-auto py-16">
 				<h2 className="mb-8 text-3xl font-semibold text-center">Featured Projects</h2>
 				<div className="grid gap-8 sm:grid-cols-2 max-w-5xl mx-auto">
-					<Link
-						href="/case-studies/spothotel"
-						className="group rounded-lg border bg-card overflow-hidden shadow-sm transition hover:shadow-md"
-					>
-						<Image
-							src="/projects/spothotel-thumb.png"
-							alt="SpotHotel thumbnail"
-							width={600}
-							height={300}
-							className="w-full h-40 object-cover"
-						/>
-						<div className="p-5">
-							<h3 className="font-semibold group-hover:text-primary">SpotHotel</h3>
-							<p className="text-sm text-muted-foreground">
-								Hotel booking app with real-time availability & payments.
-							</p>
-							<p className="mt-2 text-xs text-muted-foreground">
-								Next.js • Prisma • PostgreSQL
-							</p>
-						</div>
-					</Link>
-
-					<Link
-						href="/case-studies/trackzone"
-						className="group rounded-lg border bg-card overflow-hidden shadow-sm transition hover:shadow-md"
-					>
-						<Image
-							src="/projects/trackzone-thumb.png"
-							alt="TrackZone thumbnail"
-							width={600}
-							height={300}
-							className="w-full h-40 object-cover"
-						/>
-						<div className="p-5">
-							<h3 className="font-semibold group-hover:text-primary">TrackZone</h3>
-							<p className="text-sm text-muted-foreground">
-								Project management app built with SDLC approach.
-							</p>
-							<p className="mt-2 text-xs text-muted-foreground">
-								React • Tailwind • Node.js
-							</p>
-						</div>
-					</Link>
+					{projects.filter((item => item.featured)).map((project, idx) => (
+						<Link
+							href={project.caseStudy} key={idx}
+							className="group rounded-lg border bg-card overflow-hidden shadow-sm transition hover:shadow-md"
+						>
+							<Image
+								src={project.thumbnail}
+								alt={project.title}
+								width={600}
+								height={300}
+								className="w-full h-40 object-cover"
+							/>
+							<div className="p-5">
+								<h3 className="font-semibold group-hover:text-primary">{project.title}</h3>
+								<p className="text-sm text-muted-foreground">
+									{project.description}
+								</p>
+								<p className="mt-2 text-xs text-muted-foreground">
+									{project.tech.join(", ")}
+								</p>
+							</div>
+						</Link>
+					))}
 				</div>
 
 				<div className="mt-8 text-center">

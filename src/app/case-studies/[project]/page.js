@@ -1,52 +1,14 @@
-"use client";
 
+import projects from "@/data/projects";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-const projects = {
-	spothotel: {
-		title: "SpotHotel",
-		problem: "Booking hotels online often lacks real-time updates and smooth UX.",
-		solution:
-			"Built a full-stack platform with Next.js + Prisma + PostgreSQL. Integrated secure Stripe payments and real-time availability.",
-		tech: ["Next.js", "Prisma", "PostgreSQL", "Tailwind", "Stripe"],
-		features: [
-			"Real-time room availability",
-			"Secure payment gateway",
-			"Admin & customer dashboards",
-		],
-		links: {
-			live: "https://spothotel.vercel.app",
-			github: "https://github.com/yourusername/spothotel",
-			video: "https://youtube.com/demo-video",
-		},
-		visuals: ["/projects/spothotel-screenshot1.png", "/projects/spothotel-screenshot2.png"],
-		resources: {
-			srs: "/docs/trackzone-srs.pdf",
-			figma: "https://www.figma.com/file/xyz/trackzone-design",
-			wireframes: ["/projects/trackzone-wire1.png", "/projects/trackzone-wire2.png"],
-			erd: "/projects/trackzone-erd.png",
-			componentTree: "/projects/trackzone-component-tree.png",
-		},
-	},
-	trackzone: {
-		title: "TrackZone",
-		problem: "Managing tasks with clarity is hard without proper workflow & visualization.",
-		solution:
-			"Created a project management app following SDLC (SRS → Wireframe → Figma → Code → Deploy).",
-		tech: ["React", "Tailwind", "Node.js", "Figma"],
-		features: ["Kanban board for tasks", "User roles & authentication", "Activity tracking"],
-		links: {
-			live: "https://trackzone.vercel.app",
-			github: "https://github.com/yourusername/trackzone",
-		},
-		visuals: ["/projects/trackzone1.png", "/projects/trackzone2.png"],
-	},
-};
+export default async function CaseStudyPage({ params}) {
+	const { project: param } = await params;
 
-export default function CaseStudyPage({ params }) {
-	const project = projects[params.project];
+	const project = projects.find(project => project.caseStudy === `/case-studies/${param}`);
 	if (!project) return notFound();
 
 	return (
@@ -97,10 +59,13 @@ export default function CaseStudyPage({ params }) {
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
 						{project.visuals.map((src, idx) => (
 							<Zoom key={idx}>
-								<img
+								<Image
+
 									src={src}
+									width={10000}
+									height={10000}
 									alt={`Screenshot ${idx + 1}`}
-									className="rounded-lg border shadow cursor-zoom-in"
+									className="rounded-lg border shadow cursor-zoom-in w-full h-auto"
 								/>
 							</Zoom>
 						))}
@@ -119,7 +84,7 @@ export default function CaseStudyPage({ params }) {
 								target="_blank"
 								className="block text-primary underline"
 							>
-								📄 View SRS Document (PDF)
+								📄 View SRS Document
 							</a>
 						)}
 
@@ -195,27 +160,27 @@ export default function CaseStudyPage({ params }) {
 
 			{/* Links */}
 			<div className="mt-10 flex flex-wrap gap-4">
-				{project.links.live && (
+				{project.liveUrl && (
 					<a
-						href={project.links.live}
+						href={project.liveUrl}
 						target="_blank"
 						className="px-4 py-2 bg-primary text-primary-foreground rounded-lg text-sm font-medium transition-all shadow hover:bg-primary/90"
 					>
 						Live Project
 					</a>
 				)}
-				{project.links.github && (
+				{project.githubUrl && (
 					<a
-						href={project.links.github}
+						href={project.githubUrl}
 						target="_blank"
 						className="px-4 py-2 border rounded-lg text-sm font-medium transition-all bg-background hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50"
 					>
 						GitHub
 					</a>
 				)}
-				{project.links.video && (
+				{project.videoUrl && (
 					<a
-						href={project.links.video}
+						href={project.videoUrl}
 						target="_blank"
 						className="px-4 py-2 bg-secondary text-secondary-foreground rounded-lg shadow text-sm font-medium transition-all hover:bg-secondary/80"
 					>
