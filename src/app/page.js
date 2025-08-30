@@ -45,7 +45,7 @@ const HomePage = () => {
 				<div className="grid gap-8 sm:grid-cols-2 max-w-5xl mx-auto">
 					{projects.filter((item => item.featured)).map((project, idx) => (
 						<Link
-							href={project.caseStudy} key={idx}
+							href={project.details} key={idx}
 							className="group rounded-lg border bg-card overflow-hidden shadow-sm transition hover:shadow-md"
 						>
 							<Image
