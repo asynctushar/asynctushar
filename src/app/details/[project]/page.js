@@ -1,30 +1,30 @@
-
 import projects from "@/data/projects";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from "@/components/ui/carousel";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-export default async function CaseStudyPage({ params}) {
+export default async function CaseStudyPage({ params }) {
 	const { project: param } = await params;
 
-	const project = projects.find(project => project.caseStudy === `/details/${param}`);
+	const project = projects.find(project => project.details === `/details/${param}`);
 	if (!project) return notFound();
 
 	return (
 		<section className="container mx-auto py-16 px-4">
 			<h1 className="mb-8 text-4xl font-bold">{project.title}</h1>
 
-			{/* Problem */}
+			{/* Description */}
 			<div className="mb-8">
-				<h2 className="text-xl font-semibold mb-2">Problem</h2>
-				<p className="text-muted-foreground">{project.problem}</p>
-			</div>
-
-			{/* Solution */}
-			<div className="mb-8">
-				<h2 className="text-xl font-semibold mb-2">Solution</h2>
-				<p className="text-muted-foreground">{project.solution}</p>
+				<h2 className="text-xl font-semibold mb-2">Description</h2>
+				<p className="text-muted-foreground">{project.description}</p>
 			</div>
 
 			{/* Tech Stack */}
@@ -55,20 +55,28 @@ export default async function CaseStudyPage({ params}) {
 			{/* Visuals */}
 			{project.visuals?.length > 0 && (
 				<div className="mb-12">
-					<h2 className="text-xl font-semibold mb-2">Visuals</h2>
-					<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-						{project.visuals.map((src, idx) => (
-							<Zoom key={idx}>
-								<Image
+					<h2 className="text-xl font-semibold mb-8 md:mb-16">Visuals</h2>
+					<div className="flex justify-center">
+						<Carousel className="w-full lg:w-10/12" opts={{ loop: true, duration: 30 }}>
+							<CarouselContent>
+								{project.visuals.map((src, idx) => (
+									<CarouselItem key={idx}>
+										<Zoom>
+											<Image
 
-									src={src}
-									width={10000}
-									height={10000}
-									alt={`Screenshot ${idx + 1}`}
-									className="rounded-lg border shadow cursor-zoom-in w-full h-auto"
-								/>
-							</Zoom>
-						))}
+												src={src}
+												width={10000}
+												height={10000}
+												alt={`Screenshot ${idx + 1}`}
+												className="rounded-lg border shadow cursor-zoom-in w-fit"
+											/>
+										</Zoom>
+									</CarouselItem>
+								))}
+							</CarouselContent >
+							<CarouselPrevious size="lg" />
+							<CarouselNext size="lg" />
+						</Carousel>
 					</div>
 				</div>
 			)}
@@ -98,59 +106,122 @@ export default async function CaseStudyPage({ params}) {
 							</a>
 						)}
 
-						{project.resources.wireframes?.length > 0 && (
+						{project.resources.sitemap && (
 							<div>
-								<h3 className="font-medium mb-2">Wireframes</h3>
-								<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-									{project.resources.wireframes.map((src, idx) => (
-										<Zoom key={idx}>
-											<img
-												src={src}
-												alt={`Wireframe ${idx + 1}`}
-												className="rounded-lg border shadow cursor-zoom-in"
-											/>
-										</Zoom>
-									))}
+								<h3 className="font-medium mb-2">Sitemap</h3>
+								<div className="w-full lg:w-1/2">
+									<Zoom>
+										<Image
+											width={10000}
+											height={10000}
+											src={project.resources.sitemap}
+											alt="ER Diagram"
+											className="rounded-lg border shadow mt-2 cursor-zoom-in w-full h-auto"
+										/>
+									</Zoom>
 								</div>
+								<a
+									href={project.resources.sitemap}
+									download
+									className="text-sm text-primary underline block mt-1"
+								>
+									⬇ Download Sitemap
+								</a>
+							</div>
+						)}
+
+						{project.resources.userFlow && (
+							<div>
+								<h3 className="font-medium mb-2">User Flow</h3>
+								<div className="w-full lg:w-1/2">
+									<Zoom>
+										<Image
+											width={10000}
+											height={10000}
+											src={project.resources.userFlow}
+											alt="ER Diagram"
+											className="rounded-lg border shadow mt-2 cursor-zoom-in w-full h-auto"
+										/>
+									</Zoom>
+								</div>
+								<a
+									href={project.resources.userFlow}
+									download
+									className="text-sm text-primary underline block mt-1"
+								>
+									⬇ Download User Flow
+								</a>
+							</div>
+						)}
+
+						{project.resources.wireframe && (
+							<div>
+								<h3 className="font-medium mb-2">Wireframe</h3>
+								<div className="w-full lg:w-1/2">
+									<Zoom >
+										<Image
+											width={10000}
+											height={10000}
+											src={project.resources.wireframe}
+											alt={`Wireframe ${project.title}`}
+											className="rounded-lg border shadow cursor-zoom-in w-full h-auto"
+										/>
+									</Zoom>
+								</div>
+								<a
+									href={project.resources.wireframe}
+									download
+									className="text-sm text-primary underline block mt-1"
+								>
+									⬇ Download full Wireframe
+								</a>
+							</div>
+						)}
+
+						{project.resources.frontendComponentTree && (
+							<div>
+								<h3 className="font-medium mb-2">Frontend Component Tree</h3>
+								<div className="w-full lg:w-1/2">
+									<Zoom>
+										<Image
+											width={10000}
+											height={10000}
+											src={project.resources.frontendComponentTree}
+											alt="Component Tree"
+											className="rounded-lg border shadow mt-2 cursor-zoom-in w-full h-auto"
+										/>
+									</Zoom>
+								</div>
+								<a
+									href={project.resources.frontendComponentTree}
+									download
+									className="text-sm text-primary underline block mt-1"
+								>
+									⬇ Download Frontend Component Tree
+								</a>
 							</div>
 						)}
 
 						{project.resources.erd && (
 							<div>
 								<h3 className="font-medium mb-2">ER Diagram</h3>
-								<Zoom>
-									<img
-										src={project.resources.erd}
-										alt="ER Diagram"
-										className="rounded-lg border shadow mt-2 cursor-zoom-in"
-									/>
-								</Zoom>
+								<div className="w-full lg:w-1/2">
+									<Zoom>
+										<Image
+											width={10000}
+											height={10000}
+											src={project.resources.erd}
+											alt="ER Diagram"
+											className="rounded-lg border shadow mt-2 cursor-zoom-in w-full h-auto"
+										/>
+									</Zoom>
+								</div>
 								<a
 									href={project.resources.erd}
 									download
 									className="text-sm text-primary underline block mt-1"
 								>
 									⬇ Download Full ER Diagram
-								</a>
-							</div>
-						)}
-
-						{project.resources.componentTree && (
-							<div>
-								<h3 className="font-medium mb-2">Component Tree</h3>
-								<Zoom>
-									<img
-										src={project.resources.componentTree}
-										alt="Component Tree"
-										className="rounded-lg border shadow mt-2 cursor-zoom-in"
-									/>
-								</Zoom>
-								<a
-									href={project.resources.componentTree}
-									download
-									className="text-sm text-primary underline block mt-1"
-								>
-									⬇ Download Component Tree
 								</a>
 							</div>
 						)}
