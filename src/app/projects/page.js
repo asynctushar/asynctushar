@@ -23,7 +23,7 @@ export default function ProjectsPage() {
 								{project.title}
 							</h3>
 							<p className="mt-1 text-sm text-muted-foreground flex-1">
-								{project.description}
+								{project.description.short}
 							</p>
 							<p className="mt-3 text-xs text-muted-foreground">
 								{project.tech.join(", ")}

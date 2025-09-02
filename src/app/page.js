@@ -58,7 +58,7 @@ const HomePage = () => {
 							<div className="p-5">
 								<h3 className="font-semibold group-hover:text-primary">{project.title}</h3>
 								<p className="text-sm text-muted-foreground">
-									{project.description}
+									{project.description.short}
 								</p>
 								<p className="mt-2 text-xs text-muted-foreground">
 									{project.tech.join(", ")}

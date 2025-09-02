@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+				<ThemeProvider attribute="class" defaultTheme="light" enableSystem>
 					<div className="px-2 sm:px-4 md:px-8">
 						<Navbar />
 						{children}

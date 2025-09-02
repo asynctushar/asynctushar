@@ -3,7 +3,11 @@ const projects = [
 		title: "SpotHotel",
 		type: "Personal Project",
 		featured: true,
-		description: "A full-stack hotel booking platform with real-time availability and secure payments.",
+		description: {
+			short: "A full-stack hotel booking platform with real-time availability and secure payments.",
+			long:
+				"SpotHotel is a full-stack hotel booking platform built with the MERN stack. It provides real-time room availability tracking, a secure Stripe-powered payment system, and personalized customer profiles. The platform also includes an admin dashboard to manage hotels, rooms, bookings, and users, making it a comprehensive solution for both customers and hotel managers. With a modern UI powered by MUI and Tailwind, it ensures a smooth and responsive experience across devices.",
+		},
 		tech: ["React", "Node.js", "Stipe", "Multer", "MongoDB", "MUI", "Redux Toolkit", "Tailwind"],
 		features: [
 			"Real-time room availability tracking",
@@ -15,15 +19,31 @@ const projects = [
 		githubUrl: "https://github.com/asynctushar/spothotel",
 		thumbnail: "/images/projects/spothotel/Thumbnail.png",
 		videoUrl: "https://youtu.be/IAGHIt53x2k?si=sYicXKeKT-euV43z",
-		details: "/details/spothotel",
-		visuals: ["/images/projects/spothotel/visuals/Home.png", "/images/projects/spothotel/visuals/Hotel.png", "/images/projects/spothotel/visuals/Checkout.png", "/images/projects/spothotel/visuals/Orders.png", "/images/projects/spothotel/visuals/Dashboard.png", "/images/projects/spothotel/visuals/CreateHotel.png", "/images/projects/spothotel/visuals/AllHotels.png", "/images/projects/spothotel/visuals/AllRooms.png", "/images/projects/spothotel/visuals/CreateRoom.png", "/images/projects/spothotel/visuals/AllUsers.png", "/images/projects/spothotel/visuals/AllBookings.png"],
-		resources: null
+		details: "/project/spothotel",
+		visuals: [
+			"/images/projects/spothotel/visuals/Home.png",
+			"/images/projects/spothotel/visuals/Hotel.png",
+			"/images/projects/spothotel/visuals/Checkout.png",
+			"/images/projects/spothotel/visuals/Orders.png",
+			"/images/projects/spothotel/visuals/Dashboard.png",
+			"/images/projects/spothotel/visuals/CreateHotel.png",
+			"/images/projects/spothotel/visuals/AllHotels.png",
+			"/images/projects/spothotel/visuals/AllRooms.png",
+			"/images/projects/spothotel/visuals/CreateRoom.png",
+			"/images/projects/spothotel/visuals/AllUsers.png",
+			"/images/projects/spothotel/visuals/AllBookings.png",
+		],
+		resources: null,
 	},
 	{
 		title: "TrackZone",
 		type: "Personal Project",
 		featured: true,
-		description: "An event management tool designed for seamless scheduling across different time zones.",
+		description: {
+			short: "An event management tool designed for seamless scheduling across different time zones.",
+			long:
+				"TrackZone is a modern event management tool focused on solving the challenges of scheduling across multiple time zones. Users can create and manage clocks for different regions, schedule events with timezone awareness, and keep track of all activities in a clean interface. The project features an informative landing page, a contact page for queries, and multiple supporting pages. Built with React, MUI, and Date-fns, TrackZone provides accuracy and ease of use for global event coordination.",
+		},
 		tech: ["React", "MUI", "Date-fns"],
 		features: [
 			"Base clock with multiple timezone support",
@@ -36,8 +56,19 @@ const projects = [
 		githubUrl: "https://github.com/asynctushar/trackzone",
 		thumbnail: "/images/projects/trackzone/Thumbnail.png",
 		videoUrl: null,
-		details: "/details/trackzone",
-		visuals: ["/images/projects/trackzone/visuals/Home.png", "/images/projects/trackzone/visuals/Testimonials.png", "/images/projects/trackzone/visuals/BaseClock.png", "/images/projects/trackzone/visuals/OtherClock.png", "/images/projects/trackzone/visuals/UpdateClock.png", "/images/projects/trackzone/visuals/EventsPage.png", "/images/projects/trackzone/visuals/Events.png", "/images/projects/trackzone/visuals/UpdateEvent.png", "/images/projects/trackzone/visuals/Contacts.png", "/images/projects/trackzone/visuals/About.png",],
+		details: "/project/trackzone",
+		visuals: [
+			"/images/projects/trackzone/visuals/Home.png",
+			"/images/projects/trackzone/visuals/Testimonials.png",
+			"/images/projects/trackzone/visuals/BaseClock.png",
+			"/images/projects/trackzone/visuals/OtherClock.png",
+			"/images/projects/trackzone/visuals/UpdateClock.png",
+			"/images/projects/trackzone/visuals/EventsPage.png",
+			"/images/projects/trackzone/visuals/Events.png",
+			"/images/projects/trackzone/visuals/UpdateEvent.png",
+			"/images/projects/trackzone/visuals/Contacts.png",
+			"/images/projects/trackzone/visuals/About.png",
+		],
 		resources: {
 			srs: "https://www.notion.so/Track-Zone-Project-133975ba6f7380d19326fd6922d73b2d?source=copy_link",
 			figma: "https://www.figma.com/design/ioVGU6RDlZAVQNyhtSD5BJ/Trackzone-Project?m=auto&t=TnmG2h7E52o4EWYq-1",
@@ -50,8 +81,12 @@ const projects = [
 	{
 		title: "Chadbot",
 		type: "Freelance Project",
-		description: "A platform to build and chat with custom AI agents..",
-		tech: ["React", "Node.js", "Python", "Firebase", "Redis", "Socket.io", "MongoDB",],
+		description: {
+			short: "A platform to build and chat with custom AI agents..",
+			long:
+				"Chadbot is a freelance project designed as a platform where users can build and interact with their own AI agents. It supports real-time chat powered by WebSockets, activity updates across the app, and an admin dashboard for managing bots, users, and related content. Built with React, Node.js, Python, Firebase, and Redis, the project leverages caching and scalable architecture for smooth performance. The platform combines AI functionality with user-friendly controls for both end users and admins.",
+		},
+		tech: ["React", "Node.js", "Python", "Firebase", "Redis", "Socket.io", "MongoDB"],
 		features: [
 			"Create and chat with multiple AI agents",
 			"Real-time activity updates across the app",
@@ -63,14 +98,33 @@ const projects = [
 		githubUrl: null,
 		videoUrl: null,
 		thumbnail: "/images/projects/chadbot/Thumbnail.png",
-		details: "/details/chadbot",
-		visuals: ["/images/projects/chadbot/visuals/Login.png", "/images/projects/chadbot/visuals/ForgotPassword.png", "/images/projects/chadbot/visuals/Chat.png", "/images/projects/chadbot/visuals/BotsAndUsers.png", "/images/projects/chadbot/visuals/Mention.png", "/images/projects/chadbot/visuals/UpdateProfile.png", "/images/projects/chadbot/visuals/BuildAgent.png", "/images/projects/chadbot/visuals/DashboardLoader.png", "/images/projects/chadbot/visuals/FilterDashboard.png", "/images/projects/chadbot/visuals/AdminDashboard.png", "/images/projects/chadbot/visuals/CreateBot.png", "/images/projects/chadbot/visuals/AllBots.png", "/images/projects/chadbot/visuals/UpdateBot.png", "/images/projects/chadbot/visuals/AllUsers.png",],
-		resources: null
+		details: "/project/chadbot",
+		visuals: [
+			"/images/projects/chadbot/visuals/Login.png",
+			"/images/projects/chadbot/visuals/ForgotPassword.png",
+			"/images/projects/chadbot/visuals/Chat.png",
+			"/images/projects/chadbot/visuals/BotsAndUsers.png",
+			"/images/projects/chadbot/visuals/Mention.png",
+			"/images/projects/chadbot/visuals/UpdateProfile.png",
+			"/images/projects/chadbot/visuals/BuildAgent.png",
+			"/images/projects/chadbot/visuals/DashboardLoader.png",
+			"/images/projects/chadbot/visuals/FilterDashboard.png",
+			"/images/projects/chadbot/visuals/AdminDashboard.png",
+			"/images/projects/chadbot/visuals/CreateBot.png",
+			"/images/projects/chadbot/visuals/AllBots.png",
+			"/images/projects/chadbot/visuals/UpdateBot.png",
+			"/images/projects/chadbot/visuals/AllUsers.png",
+		],
+		resources: null,
 	},
 	{
 		title: "MINE SAT PLATFORM",
 		type: "Freelance Project",
-		description: "An online quiz and exam practice platform with real-time assessments.",
+		description: {
+			short: "An online quiz and exam practice platform with real-time assessments.",
+			long:
+				"MINE SAT PLATFORM is a full-stack web app for online quizzes and SAT exam preparation. It provides timed quizzes, instant feedback, and detailed analytics on results. Students can practice modules before taking exams, while admins can manage questions, passages, and modules through a dedicated dashboard. Built with React, Node.js, MongoDB, Passport.js, and Redux Toolkit, the platform ensures secure access, responsive design, and smooth user experience.",
+		},
 		tech: ["React", "Node.js", "MongoDB", "Passport.js", "Material-Tailwind", "Redux Toolkit", "Tailwind"],
 		features: [
 			"Timed quizzes with instant feedback",
@@ -82,15 +136,26 @@ const projects = [
 		githubUrl: null,
 		videoUrl: null,
 		thumbnail: "/images/projects/quizapp/Thumbnail.png",
-		details: "/details/quizapp",
-		visuals: ["/images/projects/quizapp/visuals/Home.png", "/images/projects/quizapp/visuals/ExamPreparation.png", "/images/projects/quizapp/visuals/Quiz.png", "/images/projects/quizapp/visuals/AllModules.png", "/images/projects/quizapp/visuals/AllQuestions.png", "/images/projects/quizapp/visuals/AddPassage.png",],
+		details: "/project/quizapp",
+		visuals: [
+			"/images/projects/quizapp/visuals/Home.png",
+			"/images/projects/quizapp/visuals/ExamPreparation.png",
+			"/images/projects/quizapp/visuals/Quiz.png",
+			"/images/projects/quizapp/visuals/AllModules.png",
+			"/images/projects/quizapp/visuals/AllQuestions.png",
+			"/images/projects/quizapp/visuals/AddPassage.png",
+		],
 		resources: null,
 	},
 	{
 		title: "Viste Guest",
 		type: "Freelance Project",
-		description: "A customer service platform for Viste users, featuring AI assistance and guest tools.",
-		tech: ["React", "Node.js", "MongoDB", "Multer", "Material Tailwind", "Redux Toolkit", "Tailwind",],
+		description: {
+			short: "A customer service platform for Viste users, featuring AI assistance and guest tools.",
+			long:
+				"Viste Guest is a freelance project created as a customer service and engagement platform. It integrates AI-powered chat support, a feedback/reporting system, and features for saving or downloading chat history. Users can also mark favorite chats and access guest tools. The platform supports dark mode and is fully responsive for all devices. Built with React, Node.js, MongoDB, and Redux Toolkit, it provides a smooth and scalable customer support experience.",
+		},
+		tech: ["React", "Node.js", "MongoDB", "Multer", "Material Tailwind", "Redux Toolkit", "Tailwind"],
 		features: [
 			"AI-powered chat support",
 			"Feedback and reporting system",
@@ -102,14 +167,33 @@ const projects = [
 		githubUrl: null,
 		videoUrl: null,
 		thumbnail: "/images/projects/viste-guest/Thumbnail.png",
-		details: "/details/viste-guest",
-		visuals: ["/images/projects/viste-guest/visuals/Login.png", "/images/projects/viste-guest/visuals/ForgotPassword.png", "/images/projects/viste-guest/visuals/Chats.png", "/images/projects/viste-guest/visuals/Sidebar.png", "/images/projects/viste-guest/visuals/DarkMode.png", "/images/projects/viste-guest/visuals/GuestShop.png", "/images/projects/viste-guest/visuals/Helpdesk.png", "/images/projects/viste-guest/visuals/FAQ.png", "/images/projects/viste-guest/visuals/Map.png", "/images/projects/viste-guest/visuals/Feedback.png", "/images/projects/viste-guest/visuals/LovedChat.png", "/images/projects/viste-guest/visuals/Report.png", "/images/projects/viste-guest/visuals/Share.png", "/images/projects/viste-guest/visuals/ClearCache.png",],
+		details: "/project/viste-guest",
+		visuals: [
+			"/images/projects/viste-guest/visuals/Login.png",
+			"/images/projects/viste-guest/visuals/ForgotPassword.png",
+			"/images/projects/viste-guest/visuals/Chats.png",
+			"/images/projects/viste-guest/visuals/Sidebar.png",
+			"/images/projects/viste-guest/visuals/DarkMode.png",
+			"/images/projects/viste-guest/visuals/GuestShop.png",
+			"/images/projects/viste-guest/visuals/Helpdesk.png",
+			"/images/projects/viste-guest/visuals/FAQ.png",
+			"/images/projects/viste-guest/visuals/Map.png",
+			"/images/projects/viste-guest/visuals/Feedback.png",
+			"/images/projects/viste-guest/visuals/LovedChat.png",
+			"/images/projects/viste-guest/visuals/Report.png",
+			"/images/projects/viste-guest/visuals/Share.png",
+			"/images/projects/viste-guest/visuals/ClearCache.png",
+		],
 		resources: null,
 	},
 	{
 		title: "Instabook",
 		type: "Personal Project",
-		description: "A social media platform with posts, comments, reactions, and real-time chat.",
+		description: {
+			short: "A social media platform with posts, comments, reactions, and real-time chat.",
+			long:
+				"Instabook is a MERN-based social media platform that enables users to create posts, comment, react, and connect with others. It features secure authentication, customizable profiles, and a real-time chat system powered by Socket.io. With a focus on community interaction, Instabook offers user search, friend management, and an engaging feed. Built with React, Node.js, MongoDB, and Redux Toolkit, it delivers a responsive and interactive experience for social networking.",
+		},
 		tech: ["React", "Node.js", "MongoDB", "Socket.io", "MUI", "Redux Toolkit", "Formik", "Multer"],
 		problem: "Booking hotels online often lacks real-time updates and smooth UX.",
 		features: [
@@ -122,14 +206,27 @@ const projects = [
 		githubUrl: "https://github.com/asynctushar/instabook",
 		videoUrl: null,
 		thumbnail: "/images/projects/instabook/Thumbnail.png",
-		details: "/details/instabook",
-		visuals: ["/images/projects/instabook/visuals/Login.png", "/images/projects/instabook/visuals/Home.png", "/images/projects/instabook/visuals/Posts.png", "/images/projects/instabook/visuals/Profile.jpg", "/images/projects/instabook/visuals/UpdateProfile.png", "/images/projects/instabook/visuals/People.png", "/images/projects/instabook/visuals/Friend.png", "/images/projects/instabook/visuals/Chat.png",],
-		resources: null
+		details: "/project/instabook",
+		visuals: [
+			"/images/projects/instabook/visuals/Login.png",
+			"/images/projects/instabook/visuals/Home.png",
+			"/images/projects/instabook/visuals/Posts.png",
+			"/images/projects/instabook/visuals/Profile.jpg",
+			"/images/projects/instabook/visuals/UpdateProfile.png",
+			"/images/projects/instabook/visuals/People.png",
+			"/images/projects/instabook/visuals/Friend.png",
+			"/images/projects/instabook/visuals/Chat.png",
+		],
+		resources: null,
 	},
 	{
 		title: "Ecommerce Website",
 		type: "Personal Project",
-		description: "A modern e-commerce platform with secure payments and advanced product browsing.",
+		description: {
+			short: "A modern e-commerce platform with secure payments and advanced product browsing.",
+			long:
+				"This Ecommerce Website is a full-stack MERN project that delivers a modern online shopping experience. Users can search and filter products by category or price, manage accounts, and securely complete purchases using Stripe payments. The app also supports password recovery via email tokens and features a comprehensive admin dashboard for managing products, orders, reviews, and users. Built with React, Node.js, MongoDB, and Redux Toolkit, it combines strong functionality with a responsive design.",
+		},
 		tech: ["React", "Node.js", "MongoDB", "Nodemailer", "Stripe", "MUI", "Redux Toolkit"],
 		features: [
 			"Search and filter products by category and price",
@@ -141,10 +238,34 @@ const projects = [
 		githubUrl: "https://github.com/asynctushar/ecommerce",
 		videoUrl: null,
 		thumbnail: "/images/projects/ecommerce/Thumbnail.png",
-		details: "/details/ecommerce",
-		visuals: ["/images/projects/ecommerce/visuals/Home.png", "/images/projects/ecommerce/visuals/Featured.png", "/images/projects/ecommerce/visuals/Search.png", "/images/projects/ecommerce/visuals/Products.png", "/images/projects/ecommerce/visuals/Product.png", "/images/projects/ecommerce/visuals/Cart.png", "/images/projects/ecommerce/visuals/Login.png", "/images/projects/ecommerce/visuals/Register.png", "/images/projects/ecommerce/visuals/Shipping.png", "/images/projects/ecommerce/visuals/ConfirmOrder.png", "/images/projects/ecommerce/visuals/Payment.png", "/images/projects/ecommerce/visuals/OrderSuccess.png", "/images/projects/ecommerce/visuals/MyOrders.png", "/images/projects/ecommerce/visuals/OrderDetails.png", "/images/projects/ecommerce/visuals/NavigationOverlay.png", "/images/projects/ecommerce/visuals/Account.png", "/images/projects/ecommerce/visuals/AdminDashboard.png", "/images/projects/ecommerce/visuals/CreateProduct.png", "/images/projects/ecommerce/visuals/AllProducts.png", "/images/projects/ecommerce/visuals/UpdateProduct.png", "/images/projects/ecommerce/visuals/AllProducts.png", "/images/projects/ecommerce/visuals/AllReviews.png", "/images/projects/ecommerce/visuals/AllUsers.png",],
-		resources: null
-	}
+		details: "/project/ecommerce",
+		visuals: [
+			"/images/projects/ecommerce/visuals/Home.png",
+			"/images/projects/ecommerce/visuals/Featured.png",
+			"/images/projects/ecommerce/visuals/Search.png",
+			"/images/projects/ecommerce/visuals/Products.png",
+			"/images/projects/ecommerce/visuals/Product.png",
+			"/images/projects/ecommerce/visuals/Cart.png",
+			"/images/projects/ecommerce/visuals/Login.png",
+			"/images/projects/ecommerce/visuals/Register.png",
+			"/images/projects/ecommerce/visuals/Shipping.png",
+			"/images/projects/ecommerce/visuals/ConfirmOrder.png",
+			"/images/projects/ecommerce/visuals/Payment.png",
+			"/images/projects/ecommerce/visuals/OrderSuccess.png",
+			"/images/projects/ecommerce/visuals/MyOrders.png",
+			"/images/projects/ecommerce/visuals/OrderDetails.png",
+			"/images/projects/ecommerce/visuals/NavigationOverlay.png",
+			"/images/projects/ecommerce/visuals/Account.png",
+			"/images/projects/ecommerce/visuals/AdminDashboard.png",
+			"/images/projects/ecommerce/visuals/CreateProduct.png",
+			"/images/projects/ecommerce/visuals/AllProducts.png",
+			"/images/projects/ecommerce/visuals/UpdateProduct.png",
+			"/images/projects/ecommerce/visuals/AllProducts.png",
+			"/images/projects/ecommerce/visuals/AllReviews.png",
+			"/images/projects/ecommerce/visuals/AllUsers.png",
+		],
+		resources: null,
+	},
 ];
 
 export default projects;
