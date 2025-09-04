@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Code, Layout, Server, Wrench, Briefcase, GraduationCap } from "lucide-react";
 import projects from "@/data/projects";
+import ProjectCard from "@/components/project-card";
 
 const HomePage = () => {
 	return (
@@ -44,27 +45,7 @@ const HomePage = () => {
 				<h2 className="mb-8 text-3xl font-semibold text-center">Featured Projects</h2>
 				<div className="grid gap-8 sm:grid-cols-2 max-w-5xl mx-auto">
 					{projects.filter((item => item.featured)).map((project, idx) => (
-						<Link
-							href={project.details} key={idx}
-							className="group rounded-lg border bg-card overflow-hidden shadow-sm transition hover:shadow-md"
-						>
-							<Image
-								src={project.thumbnail}
-								alt={project.title}
-								width={600}
-								height={300}
-								className="w-full h-40 object-cover"
-							/>
-							<div className="p-5">
-								<h3 className="font-semibold group-hover:text-primary">{project.title}</h3>
-								<p className="text-sm text-muted-foreground">
-									{project.description.short}
-								</p>
-								<p className="mt-2 text-xs text-muted-foreground">
-									{project.tech.join(", ")}
-								</p>
-							</div>
-						</Link>
+						<ProjectCard key={idx} project={project} />
 					))}
 				</div>
 
