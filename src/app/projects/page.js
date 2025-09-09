@@ -24,7 +24,7 @@ export const metadata = {
 		siteName: "Tushar Biswas Portfolio",
 		images: [
 			{
-				url: "/og-projects.png",
+				url: "/og-image.png",
 				width: 1200,
 				height: 630,
 				alt: "Projects by Tushar Biswas",
@@ -38,7 +38,7 @@ export const metadata = {
 		title: "Projects | Tushar Biswas Portfolio",
 		description:
 			"Explore freelance and personal web development projects built with MERN stack, Next.js, and modern tools.",
-		images: ["/og-projects.png"],
+		images: ["/og-image.png"],
 	},
 };
 

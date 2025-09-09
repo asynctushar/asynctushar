@@ -19,7 +19,7 @@ export const metadata = {
         siteName: "Tushar Biswas Portfolio",
         images: [
             {
-                url: "/og-contact.png",
+                url: "/og-image.png",
                 width: 1200,
                 height: 630,
                 alt: "Contact Tushar Biswas Portfolio",
@@ -33,7 +33,7 @@ export const metadata = {
         title: "Contact Tushar Biswas | MERN Stack & Next.js Developer",
         description:
             "Reach out to Tushar Biswas for freelance work, collaborations, or development opportunities in MERN stack & Next.js.",
-        images: ["/og-contact.png"],
+        images: ["/og-image.png"],
     },
 };
 
