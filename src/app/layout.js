@@ -74,9 +74,9 @@ export default function RootLayout({ children }) {
 		<html lang="en" suppressHydrationWarning>
 			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
 				<ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-					<div className="px-2 sm:px-4 md:px-8">
+					<div className="flex min-h-screen flex-col px-2 sm:px-4 md:px-8">
 						<Navbar />
-						{children}
+						<main className="flex-1 flex flex-col">{children}</main>
 						<Footer />
 						<Toaster richColors position="top-right" duration={3000} closeButton />
 					</div>

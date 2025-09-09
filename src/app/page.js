@@ -5,7 +5,7 @@ import { Code, Layout, Server, Wrench, Briefcase, GraduationCap } from "lucide-r
 import projects from "@/data/projects";
 import ProjectCard from "@/components/project-card";
 
-const HomePage = () => {
+const HomePage = async () => {
 	return (
 		<>
 			{/* Hero Section */}
