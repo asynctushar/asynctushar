@@ -1,6 +1,45 @@
-"use client";
-
 import { Briefcase, GraduationCap, Target, Code, CloudLightning, Users } from "lucide-react";
+
+export const metadata = {
+	title: "About Me | Tushar Biswas - MERN Stack & Next.js Developer",
+	description:
+		"Learn more about Tushar Biswas, a MERN Stack & Next.js developer with freelancing experience, full-stack projects, and a passion for building scalable web apps.",
+	keywords: [
+		"About Tushar Biswas",
+		"Tushar Biswas developer",
+		"MERN stack developer",
+		"Next.js developer",
+		"React developer",
+		"freelance developer",
+		"full stack developer",
+	],
+	openGraph: {
+		title: "About Tushar Biswas | MERN Stack & Next.js Developer",
+		description:
+			"Discover Tushar Biswas's journey as a MERN Stack & Next.js developer — from freelancing on Fiverr to delivering full-stack projects with React, Node.js, and MongoDB.",
+		url: "https://asynctushar.vercel.app/about",
+		siteName: "Tushar Biswas Portfolio",
+		images: [
+			{
+				url: "/og-image.png",
+				width: 1200,
+				height: 630,
+				alt: "About Tushar Biswas Portfolio",
+			},
+		],
+		locale: "en_US",
+		type: "profile",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "About Tushar Biswas | MERN Stack & Next.js Developer",
+		description:
+			"Explore the background and skills of Tushar Biswas, a MERN Stack & Next.js developer passionate about building scalable, user-friendly applications.",
+		images: ["/og-image.png"],
+	},
+};
+
+
 
 export default function AboutPage() {
 	return (

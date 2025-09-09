@@ -13,45 +13,61 @@ import "react-medium-image-zoom/dist/styles.css";
 
 // ✅ Generate SEO Metadata
 export async function generateMetadata({ params }) {
-	const { project: param } = params;
-	const project = projects.find(p => p.details === `/project/${param}`);
+	const { project: param } = await params;
+	const project = projects.find((p) => p.details === `/project/${param}`);
 
-	if (!project) return { title: "Project Not Found" };
+	if (!project) {
+		return {
+			title: "Project Not Found | Tushar Biswas Portfolio",
+			description: "The project you are looking for does not exist.",
+		};
+	}
+
+	const domain = "https://asynctushar.vercel.app";
+	const ogImage =
+		project.thumbnail || `${domain}/og-image.png`;
 
 	return {
-		title: `${project.title} | Portfolio`,
+		title: `${project.title} | Tushar Biswas Portfolio`,
 		description: project.description.short,
+		keywords: [
+			project.title,
+			"Tushar Biswas project",
+			"MERN stack project",
+			"Next.js portfolio project",
+			"React project",
+			"Node.js project",
+			...project.tech
+		],
+		alternates: {
+			canonical: `${domain}/project/${param}`,
+		},
 		openGraph: {
-			title: `${project.title} | Portfolio`,
-			description: project.description,
-			url: `https://asynctushar.com/project/${param}`,
-			siteName: "Your Portfolio",
-			images: project.visuals?.length
-				? project.visuals.map((src) => ({
-					url: src,
+			title: `${project.title} | Tushar Biswas Portfolio`,
+			description: project.description.long,
+			url: `${domain}/project/${param}`,
+			siteName: "Tushar Biswas Portfolio",
+			images: [
+				{
+					url: ogImage,
 					width: 1200,
 					height: 630,
-					alt: project.title,
-				}))
-				: [
-					{
-						url: "https://asynctushar.vercel.app/og-default.png", // fallback OG image
-						width: 1200,
-						height: 630,
-						alt: "Portfolio Preview",
-					},
-				],
+					alt: `${project.title} preview`,
+				},
+			],
 			locale: "en_US",
 			type: "website",
 		},
 		twitter: {
 			card: "summary_large_image",
-			title: `${project.title} | Portfolio`,
+			title: `${project.title} | Tushar Biswas Portfolio`,
 			description: project.description.short,
-			images: project.visuals?.[0] || "https://asynctushar.vercel.app/og-default.png",
+			images: [ogImage],
 		},
+
 	};
 }
+
 
 const Project = async ({ params }) => {
 	const { project: param } = await params;

@@ -17,17 +17,23 @@ const geistMono = Geist_Mono({
 
 // SEO metadata
 export const metadata = {
-	title: "Tushar Biswas | Full-Stack Developer",
+	title: "Tushar Biswas | MERN Stack & Next.js Developer | Portfolio",
 	description:
-		"Portfolio of Tushar Biswas — full-stack developer specializing in React, Next.js, Node.js, and modern UI/UX. Explore projects, case studies, and open-source work.",
+		"Portfolio of Tushar Biswas, a MERN Stack & Next.js developer building scalable, responsive, and user-friendly web applications with modern tools.",
 	metadataBase: new URL("https://asynctushar.vercel.app"),
 	keywords: [
 		"Tushar Biswas",
 		"Full Stack Developer",
+		"React Developer",
+		"Next.js Developer",
+		"MERN Stack developer",
+		"Node.js Developer",
+		"Freelance Developer",
+		"Web App Development",
+		"MERN",
 		"React",
 		"Next.js",
 		"Node.js",
-		"MERN",
 		"Frontend",
 		"Backend",
 		"Portfolio",
@@ -43,9 +49,9 @@ export const metadata = {
 		apple: [{ url: "/apple-touch-icon.png" }],
 	},
 	openGraph: {
-		title: "Tushar Biswas | Full-Stack Developer",
+		title: "Tushar Biswas | MERN Stack & Next.js Developer",
 		description:
-			"Portfolio showcasing projects, skills, and case studies in full-stack development.",
+			"Portfolio of Tushar Biswas, showcasing full-stack projects, skills in React, Next.js, Node.js, MongoDB, and a passion for building scalable web apps.",
 		url: "https://asynctushar.vercel.app",
 		siteName: "Tushar Biswas Portfolio",
 		images: [
@@ -61,9 +67,9 @@ export const metadata = {
 	},
 	twitter: {
 		card: "summary_large_image",
-		title: "Tushar Biswas | Full-Stack Developer",
+		title: "Tushar Biswas | MERN Stack & Next.js Developer",
 		description:
-			"Portfolio of Tushar Biswas — React, Next.js, Node.js, and modern web development.",
+			"Explore the portfolio of Tushar Biswas – MERN Stack & Next.js developer crafting modern, user-friendly web applications.",
 		images: ["/og-image.png"],
 		creator: "@asynctushar",
 	},
