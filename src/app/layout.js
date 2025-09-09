@@ -21,6 +21,9 @@ export const metadata = {
 	description:
 		"Portfolio of Tushar Biswas, a MERN Stack & Next.js developer building scalable, responsive, and user-friendly web applications with modern tools.",
 	metadataBase: new URL("https://asynctushar.vercel.app"),
+	verification: {
+		google: "oNOoVTfS8ubiujOn43XQJYVUuehu4q3YkX9Si-u3uQA",
+	},
 	keywords: [
 		"Tushar Biswas",
 		"Full Stack Developer",
