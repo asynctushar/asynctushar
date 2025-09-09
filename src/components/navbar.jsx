@@ -29,11 +29,10 @@ export default function Navbar() {
 						<Link
 							key={item.href}
 							href={item.href}
-							className={`transition-colors ${
-								pathname === item.href
-									? "text-primary font-medium"
-									: "text-muted-foreground hover:text-foreground"
-							}`}
+							className={`transition-colors ${pathname === item.href
+								? "text-primary font-medium"
+								: "text-muted-foreground hover:text-foreground"
+								}`}
 						>
 							{item.label}
 						</Link>

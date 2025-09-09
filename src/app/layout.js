@@ -20,6 +20,7 @@ export const metadata = {
 	title: "Tushar Biswas | Full-Stack Developer",
 	description:
 		"Portfolio of Tushar Biswas — full-stack developer specializing in React, Next.js, Node.js, and modern UI/UX. Explore projects, case studies, and open-source work.",
+	metadataBase: new URL("https://asynctushar.vercel.app"),
 	keywords: [
 		"Tushar Biswas",
 		"Full Stack Developer",
@@ -33,15 +34,23 @@ export const metadata = {
 	],
 	authors: [{ name: "Tushar Biswas" }],
 	creator: "Tushar Biswas",
+	icons: {
+		icon: [
+			{ url: "/favicon.ico" },
+			{ url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+			{ url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+		],
+		apple: [{ url: "/apple-touch-icon.png" }],
+	},
 	openGraph: {
 		title: "Tushar Biswas | Full-Stack Developer",
 		description:
 			"Portfolio showcasing projects, skills, and case studies in full-stack development.",
-		url: "https://asynctushar.vercel.app", // update when you buy domain
+		url: "https://asynctushar.vercel.app",
 		siteName: "Tushar Biswas Portfolio",
 		images: [
 			{
-				url: "/og-image.png", // create later (1200x630px preview)
+				url: "/og-image.png",
 				width: 1200,
 				height: 630,
 				alt: "Tushar Biswas Portfolio",
@@ -56,7 +65,7 @@ export const metadata = {
 		description:
 			"Portfolio of Tushar Biswas — React, Next.js, Node.js, and modern web development.",
 		images: ["/og-image.png"],
-		creator: "@asynctushar", // optional
+		creator: "@asynctushar",
 	},
 };
 
