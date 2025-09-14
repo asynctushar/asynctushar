@@ -30,7 +30,7 @@ const HomePage = async () => {
 						<Link href="/projects">View My Projects</Link>
 					</Button>
 					<Button variant="outline" asChild>
-						<Link href="/resume.pdf" target="_blank">
+						<Link href="/Tushar_Biswas_Full_Stack_Developer.pdf" target="_blank">
 							Download Resume
 						</Link>
 					</Button>

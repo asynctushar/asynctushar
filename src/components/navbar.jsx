@@ -42,7 +42,7 @@ export default function Navbar() {
 				{/* Right actions */}
 				<div className="flex items-center gap-3">
 					<Button size="sm" asChild>
-						<Link href="/resume.pdf" target="_blank">
+						<Link href="/Tushar_Biswas_Full_Stack_Developer.pdf" target="_blank">
 							Resume
 						</Link>
 					</Button>
