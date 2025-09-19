@@ -73,7 +73,7 @@ const projects = [
 			srs: "https://www.notion.so/Track-Zone-Project-133975ba6f7380d19326fd6922d73b2d?source=copy_link",
 			figma: "https://www.figma.com/design/ioVGU6RDlZAVQNyhtSD5BJ/Trackzone-Project?m=auto&t=TnmG2h7E52o4EWYq-1",
 			sitemap: "/images/projects/trackzone/resources/Sitemap.png",
-			userFlow: "/images/projects/trackzone/resources/UserFlow.png",
+			dataFlow: "/images/projects/trackzone/resources/DataFlow.png",
 			wireframe: "/images/projects/trackzone/resources/Wireframe.png",
 			frontendComponentTree: "/images/projects/trackzone/resources/FrontendComponentTree.png",
 		},

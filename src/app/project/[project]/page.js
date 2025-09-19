@@ -192,7 +192,7 @@ const Project = async ({ params }) => {
 						)}
 
 						{/* User Flow */}
-						{project.resources.userFlow && (
+						{project.resources.dataFlow && (
 							<a
 								href={project.resources.userFlow}
 								download
@@ -200,7 +200,7 @@ const Project = async ({ params }) => {
 							>
 								<span className="text-2xl">🔀</span>
 								<div>
-									<p className="font-medium">User Flow</p>
+									<p className="font-medium">Data Flow Diagram</p>
 									<p className="text-sm text-muted-foreground">Download full flow diagram</p>
 								</div>
 							</a>
