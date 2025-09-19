@@ -194,7 +194,7 @@ const Project = async ({ params }) => {
 						{/* User Flow */}
 						{project.resources.dataFlow && (
 							<a
-								href={project.resources.userFlow}
+								href={project.resources.dataFlow}
 								download
 								className="flex items-center gap-3 p-4 border rounded-lg shadow-sm hover:shadow-md transition bg-background"
 							>
