@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, Linkedin, Phone, Twitter } from "lucide-react";
+import { Mail, Linkedin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import Image from "next/image";
 
 
 export default function ContactPage() {
@@ -73,8 +74,8 @@ export default function ContactPage() {
 					rel="noopener noreferrer"
 					className="flex items-center gap-3 rounded-lg border p-4 hover:bg-muted transition"
 				>
-					<Twitter className="w-5 h-5 text-primary" />
-					<span>Twitter</span>
+					<Image src="/images/x.png" className="w-8 h-8" width={20} height={20} />
+					<span>X</span>
 				</a>
 				<a
 					href="https://linkedin.com/in/asynctushar"
