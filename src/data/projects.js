@@ -76,6 +76,7 @@ const projects = [
 			dataFlow: "/images/projects/trackzone/resources/DataFlow.png",
 			wireframe: "/images/projects/trackzone/resources/Wireframe.png",
 			frontendComponentTree: "/images/projects/trackzone/resources/FrontendComponentTree.png",
+			erd: "/images/projects/trackzone/resources/ERD.png",
 		},
 	},
 	{

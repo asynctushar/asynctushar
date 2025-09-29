@@ -245,8 +245,8 @@ const Project = async ({ params }) => {
 							>
 								<span className="text-2xl">🗄️</span>
 								<div>
-									<p className="font-medium">ER Diagram</p>
-									<p className="text-sm text-muted-foreground">Download database design</p>
+									<p className="font-medium">Entity Relation Diagram</p>
+									<p className="text-sm text-muted-foreground">Download ER Diagram</p>
 								</div>
 							</a>
 						)}
