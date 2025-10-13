@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api
+
+# Host
+Host: https://asynctushar.vercel.app
+
+# Sitemaps
+Sitemap: https://asynctushar.vercel.app/sitemap.xml

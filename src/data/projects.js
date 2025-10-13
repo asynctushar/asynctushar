@@ -19,7 +19,7 @@ const projects = [
 		githubUrl: "https://github.com/asynctushar/spothotel",
 		thumbnail: "/images/projects/spothotel/Thumbnail.png",
 		videoUrl: "https://youtu.be/IAGHIt53x2k?si=sYicXKeKT-euV43z",
-		details: "/project/spothotel",
+		details: "/projects/spothotel",
 		visuals: [
 			"/images/projects/spothotel/visuals/Home.png",
 			"/images/projects/spothotel/visuals/Hotel.png",
@@ -56,7 +56,7 @@ const projects = [
 		githubUrl: "https://github.com/asynctushar/trackzone",
 		thumbnail: "/images/projects/trackzone/Thumbnail.png",
 		videoUrl: null,
-		details: "/project/trackzone",
+		details: "/projects/trackzone",
 		visuals: [
 			"/images/projects/trackzone/visuals/Home.png",
 			"/images/projects/trackzone/visuals/Testimonials.png",
@@ -99,7 +99,7 @@ const projects = [
 		githubUrl: null,
 		videoUrl: null,
 		thumbnail: "/images/projects/chadbot/Thumbnail.png",
-		details: "/project/chadbot",
+		details: "/projects/chadbot",
 		visuals: [
 			"/images/projects/chadbot/visuals/Login.png",
 			"/images/projects/chadbot/visuals/ForgotPassword.png",
@@ -137,7 +137,7 @@ const projects = [
 		githubUrl: null,
 		videoUrl: null,
 		thumbnail: "/images/projects/quizapp/Thumbnail.png",
-		details: "/project/quizapp",
+		details: "/projects/quizapp",
 		visuals: [
 			"/images/projects/quizapp/visuals/Home.png",
 			"/images/projects/quizapp/visuals/ExamPreparation.png",
@@ -168,7 +168,7 @@ const projects = [
 		githubUrl: null,
 		videoUrl: null,
 		thumbnail: "/images/projects/viste-guest/Thumbnail.png",
-		details: "/project/viste-guest",
+		details: "/projects/viste-guest",
 		visuals: [
 			"/images/projects/viste-guest/visuals/Login.png",
 			"/images/projects/viste-guest/visuals/ForgotPassword.png",
@@ -207,7 +207,7 @@ const projects = [
 		githubUrl: "https://github.com/asynctushar/instabook",
 		videoUrl: null,
 		thumbnail: "/images/projects/instabook/Thumbnail.png",
-		details: "/project/instabook",
+		details: "/projects/instabook",
 		visuals: [
 			"/images/projects/instabook/visuals/Login.png",
 			"/images/projects/instabook/visuals/Home.png",
@@ -239,7 +239,7 @@ const projects = [
 		githubUrl: "https://github.com/asynctushar/ecommerce",
 		videoUrl: null,
 		thumbnail: "/images/projects/ecommerce/Thumbnail.png",
-		details: "/project/ecommerce",
+		details: "/projects/ecommerce",
 		visuals: [
 			"/images/projects/ecommerce/visuals/Home.png",
 			"/images/projects/ecommerce/visuals/Featured.png",

@@ -14,7 +14,7 @@ import "react-medium-image-zoom/dist/styles.css";
 // ✅ Generate SEO Metadata
 export async function generateMetadata({ params }) {
 	const { project: param } = await params;
-	const project = projects.find((p) => p.details === `/project/${param}`);
+	const project = projects.find((p) => p.details === `/projects/${param}`);
 
 	if (!project) {
 		return {
@@ -40,12 +40,12 @@ export async function generateMetadata({ params }) {
 			...project.tech
 		],
 		alternates: {
-			canonical: `${domain}/project/${param}`,
+			canonical: `${domain}/projects/${param}`,
 		},
 		openGraph: {
 			title: `${project.title} | Tushar Biswas Portfolio`,
 			description: project.description.long,
-			url: `${domain}/project/${param}`,
+			url: `${domain}/projects/${param}`,
 			siteName: "Tushar Biswas Portfolio",
 			images: [
 				{
@@ -68,11 +68,19 @@ export async function generateMetadata({ params }) {
 	};
 }
 
+export async function generateStaticParams() {
+	return projects.map((project) => ({
+		project: project.details.split("/").pop(),
+	}));
+}
+
+export const revalidate = 600;
+
 
 const Project = async ({ params }) => {
 	const { project: param } = await params;
 
-	const project = projects.find(project => project.details === `/project/${param}`);
+	const project = projects.find(project => project.details === `/projects/${param}`);
 	if (!project) return notFound();
 
 	return (
@@ -155,8 +163,8 @@ const Project = async ({ params }) => {
 							>
 								<span className="text-2xl">📄</span>
 								<div>
-									<p className="font-medium">SRS Document</p>
-									<p className="text-sm text-muted-foreground">View project requirements</p>
+									<p className="font-medium">Project Documentation</p>
+									<p className="text-sm text-muted-foreground">Access the SRS, client requirements, API specs, and data models.</p>
 								</div>
 							</a>
 						)}
