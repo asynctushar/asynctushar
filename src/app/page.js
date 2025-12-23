@@ -1,56 +1,74 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Code, Layout, Server, Wrench, Briefcase, GraduationCap } from "lucide-react";
+import { Code, Layout, Server, Wrench, Briefcase, GraduationCap, ChevronDown } from "lucide-react";
 import projects from "@/data/projects";
 import ProjectCard from "@/components/project-card";
 
 const HomePage = async () => {
 	return (
 		<>
-			{/* Hero Section */}
-			<section className="flex flex-col items-center justify-center py-16 text-center">
-				<p className="text-base sm:text-lg text-muted-foreground">Hi, I'm Tushar 👋</p>
+			{/* ================= HERO ================= */}
+			<section className="relative min-h-[90vh] flex items-center justify-center px-4">
+				<div className="max-w-4xl text-center">
+					<p className="text-base sm:text-lg text-muted-foreground">
+						Hi, I'm Tushar 👋
+					</p>
 
-				<h1 className="mt-3 text-2xl sm:text-4xl font-bold leading-tight">
-					Building scalable & user-friendly{" "}
-					<span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-						web applications
-					</span>{" "}
-					with React & Next.js
-				</h1>
+					<h1 className="mt-4 text-3xl sm:text-5xl font-bold leading-tight">
+						Building scalable & user-friendly{" "}
+						<span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+							web applications
+						</span>{" "}
+						with React & Next.js
+					</h1>
 
-				<p className="mt-4 max-w-2xl text-sm sm:text-base text-muted-foreground">
-					I design & build modern applications with clean UI and solid architecture.
-					Focused on creating solutions that are fast, responsive, and user-friendly.
-				</p>
+					<p className="mt-6 text-sm sm:text-base text-muted-foreground">
+						I design & build modern applications with clean UI and solid
+						architecture. Focused on creating fast, responsive, and
+						user-friendly solutions.
+					</p>
 
-				<div className="mt-6 flex flex-wrap justify-center gap-4">
-					<Button asChild>
-						<Link href="/projects">View My Projects</Link>
-					</Button>
-					<Button variant="outline" asChild>
-						<Link href="/Tushar_Biswas_Full_Stack_Developer.pdf" target="_blank">
-							Download Resume
-						</Link>
-					</Button>
-					<Button variant="secondary" asChild>
-						<Link href="/contact">Contact Me</Link>
-					</Button>
+					<div className="mt-16 flex flex-wrap justify-center gap-4">
+						<Button asChild>
+							<Link href="/projects">View My Projects</Link>
+						</Button>
+
+						<Button variant="outline" asChild>
+							<Link
+								href="/Tushar_Biswas_Full_Stack_Developer.pdf"
+								target="_blank"
+							>
+								Download Resume
+							</Link>
+						</Button>
+
+						<Button variant="secondary" asChild>
+							<Link href="/contact">Contact Me</Link>
+						</Button>
+					</div>
+				</div>
+
+				{/* Scroll Indicator */}
+				<div className="absolute bottom-24 left-1/2 -translate-x-1/2">
+					<ChevronDown className="h-8 w-8 text-muted-foreground animate-float" />
 				</div>
 			</section>
 
-			{/* Featured Projects */}
-			<section className="container mx-auto">
-				<h2 className="mb-8 text-3xl font-semibold text-center">Featured Projects</h2>
-				<div className="grid gap-8 sm:grid-cols-2 max-w-5xl mx-auto">
+			{/* ================= FEATURED PROJECTS ================= */}
+			<section className="container mx-auto px-4 py-24">
+				<h2 className="mb-12 text-center text-3xl sm:text-4xl font-semibold">
+					Featured Projects
+				</h2>
+
+				<div className="grid gap-8 sm:grid-cols-3 mx-auto">
 					{projects.filter((item => item.featured)).map((project, idx) => (
 						<ProjectCard key={idx} project={project} />
 					))}
 				</div>
 
-				<div className="mt-8 text-center">
-					<Button asChild>
+				<div className="mt-16 text-center">
+					<Button asChild size="lg">
 						<Link href="/projects">View All Projects</Link>
 					</Button>
 				</div>

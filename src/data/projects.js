@@ -36,6 +36,38 @@ const projects = [
 		resources: null,
 	},
 	{
+		title: "NexusFlow Landing Page",
+		type: "Personal Project",
+		featured: true,
+		description: {
+			short: "A modern, animated SaaS landing page with advanced interactions and mobile optimization.",
+			long:
+				"NexusFlow Landing is a production-ready SaaS landing page built with Next.js 14 and Framer Motion. It features sophisticated scroll animations, viewport-triggered effects, and seamless mobile responsiveness. The page includes comprehensive sections like hero, features grid, pricing tiers, testimonials with avatars, and a multi-column footer. With a dark blue gradient theme and smooth micro-interactions, it demonstrates modern web development best practices and advanced animation techniques for high-conversion landing pages.",
+		},
+		tech: ["Next.js", "React", "Framer Motion", "Tailwind CSS", "Lucide Icons"],
+		features: [
+			"Advanced Framer Motion animations with scroll effects",
+			"Fully responsive design optimized for all devices",
+			"Interactive pricing cards and testimonial sections",
+			"Mobile-friendly hamburger menu with smooth transitions",
+		],
+		liveUrl: "https://nexusflow-six.vercel.app",
+		githubUrl: "https://github.com/asynctushar/nexusflow",
+		thumbnail: "/images/projects/nexusflow/Thumbnail.png",
+		videoUrl: null,
+		details: "/projects/nexusflow",
+		visuals: [
+			"/images/projects/nexusflow/visuals/Hero.png",
+			"/images/projects/nexusflow/visuals/Process.png",
+			"/images/projects/nexusflow/visuals/Features.png",
+			"/images/projects/nexusflow/visuals/WhyChooseUs.png",
+			"/images/projects/nexusflow/visuals/Pricing.png",
+			"/images/projects/nexusflow/visuals/Testimonials.png",
+			"/images/projects/nexusflow/visuals/CTA.png",
+		],
+		resources: null
+	},
+	{
 		title: "TrackZone",
 		type: "Personal Project",
 		featured: true,

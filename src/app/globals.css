@@ -2,6 +2,8 @@
 @import "tw-animate-css";
 
 
+
+
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -127,6 +129,7 @@ body {
 	}
 }
 
+
 @layer base {
 	* {
 		@apply border-border outline-ring/50;
@@ -136,3 +139,22 @@ body {
 	}
 }
 
+/* ===============================
+   Custom Animation (Tailwind v4)
+================================ */
+
+@layer utilities {
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+  }
+
+  .animate-float {
+    animation: float 2s ease-in-out infinite;
+  }
+}
