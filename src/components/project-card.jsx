@@ -9,7 +9,7 @@ const ProjectCard = ({ project }) => {
             <img
                 src={project.thumbnail}
                 alt={project.title}
-                className="w-full h-40 object-cover rounded-t-lg"
+                className="w-full aspect-video object-cover rounded-t-lg"
             />
             <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-xl font-semibold">

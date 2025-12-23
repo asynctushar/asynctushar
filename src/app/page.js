@@ -9,7 +9,7 @@ const HomePage = async () => {
 	return (
 		<>
 			{/* Hero Section */}
-			<section className="flex flex-col items-center justify-center py-20 text-center">
+			<section className="flex flex-col items-center justify-center py-16 text-center">
 				<p className="text-base sm:text-lg text-muted-foreground">Hi, I'm Tushar 👋</p>
 
 				<h1 className="mt-3 text-2xl sm:text-4xl font-bold leading-tight">
@@ -41,7 +41,7 @@ const HomePage = async () => {
 			</section>
 
 			{/* Featured Projects */}
-			<section className="container mx-auto py-16">
+			<section className="container mx-auto">
 				<h2 className="mb-8 text-3xl font-semibold text-center">Featured Projects</h2>
 				<div className="grid gap-8 sm:grid-cols-2 max-w-5xl mx-auto">
 					{projects.filter((item => item.featured)).map((project, idx) => (
