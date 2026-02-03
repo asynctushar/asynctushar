@@ -1,9 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
-
-
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -144,17 +141,32 @@ body {
 ================================ */
 
 @layer utilities {
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(8px);
-    }
-  }
+	@keyframes float {
+		0%,
+		100% {
+		transform: translateY(0);
+		}
+		50% {
+		transform: translateY(8px);
+		}
+	}
 
-  .animate-float {
-    animation: float 2s ease-in-out infinite;
-  }
+	.animate-float {
+		animation: float 2s ease-in-out infinite;
+	}
+
+	@keyframes spin {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	@keyframes pulse {
+		0%, 100% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0.5;
+		}
+	}
 }

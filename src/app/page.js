@@ -1,380 +1,85 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Code, Layout, Server, Wrench, Briefcase, GraduationCap, ChevronDown } from "lucide-react";
-import projects from "@/data/projects";
-import ProjectCard from "@/components/project-card";
+import AnimatedRole from "@/components/animated-role";
 
-const HomePage = async () => {
+const HomePage = () => {
 	return (
-		<>
-			{/* ================= HERO ================= */}
-			<section className="relative min-h-[90vh] flex items-center justify-center px-4">
-				<div className="max-w-4xl text-center">
-					<p className="text-base sm:text-lg text-muted-foreground">
-						Hi, I'm Tushar 👋
-					</p>
-
-					<h1 className="mt-4 text-3xl sm:text-5xl font-bold leading-tight">
-						Building scalable & user-friendly{" "}
-						<span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-							web applications
-						</span>{" "}
-						with React & Next.js
-					</h1>
-
-					<p className="mt-6 text-sm sm:text-base text-muted-foreground">
-						I design & build modern applications with clean UI and solid
-						architecture. Focused on creating fast, responsive, and
-						user-friendly solutions.
-					</p>
-
-					<div className="mt-16 flex flex-wrap justify-center gap-4">
-						<Button asChild>
-							<Link href="/projects">View My Projects</Link>
-						</Button>
-
-						<Button variant="outline" asChild>
-							<Link
-								href="/Tushar_Biswas_Full_Stack_Developer.pdf"
-								target="_blank"
-							>
-								Download Resume
-							</Link>
-						</Button>
-
-						<Button variant="secondary" asChild>
-							<Link href="/contact">Contact Me</Link>
-						</Button>
-					</div>
-				</div>
-
-				{/* Scroll Indicator */}
-				<div className="absolute bottom-24 left-1/2 -translate-x-1/2">
-					<ChevronDown className="h-8 w-8 text-muted-foreground animate-float" />
-				</div>
-			</section>
-
-			{/* ================= FEATURED PROJECTS ================= */}
-			<section className="container mx-auto px-4 py-24">
-				<h2 className="mb-12 text-center text-3xl sm:text-4xl font-semibold">
-					Featured Projects
-				</h2>
-
-				<div className="grid gap-8 sm:grid-cols-3 mx-auto">
-					{projects.filter((item => item.featured)).map((project, idx) => (
-						<ProjectCard key={idx} project={project} />
-					))}
-				</div>
-
-				<div className="mt-16 text-center">
-					<Button asChild size="lg">
-						<Link href="/projects">View All Projects</Link>
-					</Button>
-				</div>
-			</section>
-
-			{/* Skills / Tech Stack */}
-			<section className="container mx-auto py-20">
-				<h2 className="mb-10 text-3xl font-bold text-center">Tech Stack</h2>
-
-				<div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 text-center">
-					{/* Languages */}
-					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
-						<div className="flex justify-center mb-3">
-							<Code className="h-6 w-6 text-primary" />
+		<section className="relative flex-1 flex items-center justify-center px-4 py-12 md:py-0">
+			<div className="container mx-auto max-w-7xl">
+				<div className="grid md:grid-cols-2 gap-12 items-center">
+					{/* Left Content */}
+					<div className="space-y-6">
+						{/* Available for Freelance Badge */}
+						<div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5">
+							<div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+							<span className="text-sm font-medium">Available for Freelance</span>
 						</div>
-						<h3 className="mb-12 text-xl font-semibold">Languages</h3>
-						<div className="flex flex-col gap-4 text-sm text-muted-foreground">
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=js"
-										alt="JavaScript"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>JavaScript</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=ts"
-										alt="TypeScript"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>TypeScript</span>
-							</div>
-						</div>
-					</div>
 
-					{/* Frontend */}
-					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
-						<div className="flex justify-center mb-3">
-							<Layout className="h-6 w-6 text-primary" />
-						</div>
-						<h3 className="mb-12 text-xl font-semibold">Front-End</h3>
-						<div className="flex flex-col gap-4 text-sm text-muted-foreground">
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=react"
-										alt="React"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>React</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=nextjs"
-										alt="Next.js"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Next.js</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=redux"
-										alt="Redux"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Redux Toolkit</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=tailwind"
-										alt="Tailwind"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Tailwind CSS</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=materialui"
-										alt="MUI"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Material UI</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="/images/shadcn-ui.png"
-										alt="Shadcn"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Shadcn</span>
-							</div>
-						</div>
-					</div>
+						{/* Main Heading */}
+						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+							Hi, I'm{" "}
+							<span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+								Tushar Biswas
+							</span>
+						</h1>
 
-					{/* Backend */}
-					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
-						<div className="flex justify-center mb-3">
-							<Server className="h-6 w-6 text-primary" />
-						</div>
-						<h3 className="mb-12 text-xl font-semibold">Back-End</h3>
-						<div className="flex flex-col gap-4 text-sm text-muted-foreground">
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=nodejs"
-										alt="Node.js"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Node.js</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=express"
-										alt="Express.js"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Express.js</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=mongodb"
-										alt="MongoDB"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>MongoDB</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="/images/Socket.png"
-										alt="Socket.io"
-										className="bg-slate-50 rounded-full"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Socket.io</span>
-							</div>
-						</div>
-					</div>
+						{/* Animated Role */}
+						<AnimatedRole />
 
-					{/* Tools & Services */}
-					<div className="rounded-2xl border bg-card p-6 shadow-sm hover:shadow-md transition">
-						<div className="flex justify-center mb-3">
-							<Wrench className="h-6 w-6 text-primary" />
-						</div>
-						<h3 className="mb-12 text-xl font-semibold">Tools & Services</h3>
-						<div className="flex flex-col gap-4 text-sm text-muted-foreground">
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=git"
-										alt="Git"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Git</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=github"
-										alt="Github"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Github</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=vscode"
-										alt="VSCode"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>VSCode</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=firebase"
-										alt="Firebase"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Firebase</span>
-							</div>
-							<div className="flex items-center gap-6">
-								<div className="flex justify-end w-1/3">
-									<Image
-										src="https://skillicons.dev/icons?i=vercel"
-										alt="Vercel"
-										width={28}
-										height={28}
-									/>
-								</div>
-								<span>Vercel</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* Experience Section */}
-			<section className="container mx-auto py-16">
-				<h2 className="mb-8 text-3xl font-semibold text-center">Experience</h2>
-				<div className="max-w-2xl mx-auto space-y-6">
-					<div className="rounded-lg border bg-card p-6 shadow-sm">
-						<div className="flex items-center gap-3 mb-3">
-							<Briefcase className="h-6 w-6 text-primary" />
-							<h3 className="font-semibold">Freelance MERN Stack Developer</h3>
-						</div>
-						<p className="text-sm text-muted-foreground">Fiverr · 2023 - Present</p>
-						<ul className="mt-3 list-disc list-inside text-sm text-muted-foreground space-y-1">
-							<li>
-								Delivered 25+ projects for global clients with Mongodb, Express,
-								React and Node.js
-							</li>
-							<li>
-								Developed full-stack apps including quiz app and chat application.
-							</li>
-							<li>
-								Collaborated with non-technical clients to transform ideas into
-								functional products.
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			{/* Education Section */}
-			<section className="container mx-auto py-16">
-				<h2 className="mb-8 text-3xl font-semibold text-center">Education</h2>
-				<div className="max-w-2xl mx-auto space-y-6">
-					<div className="rounded-lg border bg-card p-6 shadow-sm">
-						<div className="flex items-center gap-3 mb-3">
-							<GraduationCap className="h-6 w-6 text-primary" />
-							<h3 className="font-semibold">B.Sc. in Textile Engineering</h3>
-						</div>
-						<p className="text-sm text-muted-foreground">
-							[Barishal Textile Engineering College] · 2018 - 2022
+						{/* Description */}
+						<p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl">
+							I design and build modern web applications with clean UI and solid
+							architecture. Focused on creating fast, responsive, and user-friendly
+							solutions that deliver real impact.
 						</p>
-						<p className="mt-2 text-sm text-muted-foreground">
-							Coursework: Wet Process Engineering
-						</p>
-					</div>
-				</div>
-			</section>
 
-			{/* About Me */}
-			<section className="container mx-auto py-16">
-				<div className="max-w-3xl mx-auto text-center">
-					<h2 className="mb-4 text-3xl font-semibold">About Me</h2>
-					<p className="text-muted-foreground leading-relaxed text-lg">
-						I'm a passionate frontend developer who loves building scalable and
-						user-friendly web apps. My journey started with freelancing, solving bugs
-						and implementing features, and has grown into developing full-stack projects
-						with modern tools and frameworks.
-						<br /> <br />I focus on crafting clean UIs, smooth user experiences, and
-						writing maintainable code that delivers real impact.
-					</p>
-					<div className="mt-6">
-						<Button asChild>
-							<Link href="/about">Read More</Link>
-						</Button>
+						{/* Action Buttons */}
+						<div className="flex flex-wrap gap-4 pt-4">
+							<Button asChild size="lg" className="font-medium">
+								<Link href="/projects">View My Projects</Link>
+							</Button>
+
+							<Button variant="outline" asChild size="lg" className="font-medium">
+								<Link
+									href="/Tushar_Biswas_Full_Stack_Developer.pdf"
+									target="_blank"
+								>
+									Download Resume
+								</Link>
+							</Button>
+						</div>
+					</div>
+
+					{/* Right Image - Hidden on mobile, shown on md and up */}
+					<div className="hidden md:flex justify-center md:justify-end">
+						<div className="relative">
+							{/* Decorative Elements */}
+							<div
+								className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-purple-600/20 to-blue-600/20 rounded-full blur-2xl"
+								style={{ animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}
+							/>
+							<div
+								className="absolute -inset-2 bg-gradient-to-r from-primary via-purple-600 to-blue-600 rounded-full opacity-20"
+								style={{ animation: 'spin 8s linear infinite' }}
+							/>
+
+							{/* Profile Image */}
+							<div className="relative w-80 h-80 lg:w-96 lg:h-96">
+								<div className="absolute inset-0 rounded-full border-4 border-primary/30" />
+								<Image
+									src="/images/profile.png"
+									alt="Tushar Biswas"
+									fill
+									className="rounded-full object-cover border-8 border-background shadow-2xl"
+									priority
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
-			</section>
-		</>
+			</div>
+		</section>
 	);
 };
 
