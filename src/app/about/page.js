@@ -159,7 +159,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Skills Section */}
-			<section id="skills" className="container min-h-[calc(100vh-4rem)] mx-auto px-4 py-16 max-w-5xl scroll-mt-20 snap-start">
+			<section id="skills" className="container min-h-[calc(100vh-4rem)] mx-auto px-4 py-16 max-w-5xl">
 				<div className="container mx-auto px-4 py-12">
 					<div className="text-center mb-12">
 						<h2 className="text-3xl sm:text-4xl font-semibold mb-3">Tech Stack</h2>
@@ -311,7 +311,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Experience */}
-			<section id="experience" className="container mx-auto px-4 py-16 max-w-5xl min-h-[calc(100vh-4rem)] scroll-mt-20 snap-start">
+			<section id="experience" className="container mx-auto px-4 py-16 max-w-5xl min-h-[calc(100vh-4rem)]">
 				<h2 className="text-3xl font-semibold mb-8 text-center">Experience</h2>
 				<div className="rounded-xl border bg-card p-8 shadow-sm hover:shadow-md transition-shadow">
 					<div className="flex items-start gap-4 mb-6">
@@ -373,7 +373,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Education */}
-			<section id="education" className="container mx-auto px-4 pt-16 pb-40 max-w-5xl snap-start">
+			<section id="education" className="container mx-auto px-4 pt-16 pb-40 max-w-5xl">
 				<h2 className="text-3xl font-semibold mb-8 text-center">Education</h2>
 				<div className="rounded-xl border bg-card p-8 shadow-sm hover:shadow-md transition-shadow">
 					<div className="flex items-start gap-4 mb-6">

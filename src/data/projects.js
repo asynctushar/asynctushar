@@ -2,6 +2,7 @@ const projects = [
 	{
 		title: "SpotHotel",
 		type: "Personal Project",
+		duration: "4 weeks",
 		featured: true,
 		description: {
 			short: "A full-stack hotel booking platform with real-time availability and secure payments.",
@@ -38,6 +39,7 @@ const projects = [
 	{
 		title: "NexusFlow Landing Page",
 		type: "Personal Project",
+		duration: "3 days",
 		featured: true,
 		description: {
 			short: "A modern, animated SaaS landing page with advanced interactions and mobile optimization.",
@@ -70,6 +72,7 @@ const projects = [
 	{
 		title: "TrackZone",
 		type: "Personal Project",
+		duration: "2 weeks",
 		featured: true,
 		description: {
 			short: "An event management tool designed for seamless scheduling across different time zones.",
@@ -114,6 +117,7 @@ const projects = [
 	{
 		title: "Chadbot",
 		type: "Freelance Project",
+		duration: "2 weeks",
 		description: {
 			short: "A platform to build and chat with custom AI agents..",
 			long:
@@ -152,6 +156,7 @@ const projects = [
 	},
 	{
 		title: "MINE SAT PLATFORM",
+		duration: "3 weeks",
 		type: "Freelance Project",
 		description: {
 			short: "An online quiz and exam practice platform with real-time assessments.",
@@ -183,6 +188,7 @@ const projects = [
 	{
 		title: "Viste Guest",
 		type: "Freelance Project",
+		duration: "8 weeks",
 		description: {
 			short: "A customer service platform for Viste users, featuring AI assistance and guest tools.",
 			long:
@@ -222,6 +228,7 @@ const projects = [
 	{
 		title: "Instabook",
 		type: "Personal Project",
+		duration: "3 weeks",
 		description: {
 			short: "A social media platform with posts, comments, reactions, and real-time chat.",
 			long:
@@ -255,6 +262,7 @@ const projects = [
 	{
 		title: "Ecommerce Website",
 		type: "Personal Project",
+		duration: "4 weeks",
 		description: {
 			short: "A modern e-commerce platform with secure payments and advanced product browsing.",
 			long:
