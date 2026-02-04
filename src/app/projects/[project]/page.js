@@ -386,37 +386,7 @@ const Project = async ({ params }) => {
 									</div>
 								)}
 							</div>
-						</div>
-
-						{/* Quick Links */}
-						<div className="rounded-xl border bg-card p-6 shadow-sm">
-							<h3 className="font-semibold mb-4">Quick Links</h3>
-							<div className="space-y-2">
-								{project.liveUrl && (
-									<a
-										href={project.liveUrl}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-muted transition-colors text-sm"
-									>
-										<ExternalLink className="w-4 h-4 text-primary" />
-										<span>Live Demo</span>
-									</a>
-								)}
-								{project.githubUrl && (
-									<a
-										href={project.githubUrl}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-muted transition-colors text-sm"
-									>
-										<Github className="w-4 h-4 text-primary" />
-										<span>Source Code</span>
-									</a>
-								)}
-
-							</div>
-						</div>
+						</div>						
 					</div>
 				</div>
 			</div>

@@ -37,6 +37,40 @@ const projects = [
 		resources: null,
 	},
 	{
+		title: "Tushar Insights",
+		type: "Personal Project",
+		duration: "3 weeks",
+		featured: true,
+		description: {
+			short: "A full-stack blogging platform with authentication, comments, and role-based content management.",
+			long:
+				"Tushar Insights is a full-stack blogging platform built to explore scalable content management and modern web architecture. It supports multi-language blogs, SEO-optimized metadata, user authentication, and an interactive commenting system with replies and reactions. Admins can manage posts, users, and moderation workflows, while readers enjoy a fast, responsive reading experience. Built with Next.js, Strapi, and TypeScript, the project emphasizes performance, clean architecture, and real-world CMS workflows.",
+		},
+		tech: ["Next.js", "TypeScript", "Strapi", "PostgreSQL", "Tailwind CSS", "Redux Toolkit", "Shadcn"],
+		features: [
+			"SEO-optimized blog pages with dynamic metadata",
+			"Multi-language content support",
+			"Authentication with role-based access control",
+			"Nested comments with replies and reactions",
+			"Admin dashboard for content and user management",
+		],
+		liveUrl: "https://tushar-insights.vercel.app",
+		githubUrl: "https://github.com/asynctushar/tushar-insights",
+		thumbnail: "/images/projects/tushar-insights/Thumbnail.png",
+		videoUrl: null,
+		details: "/projects/tushar-insights",
+		visuals: [
+			"/images/projects/tushar-insights/visuals/Home.png",
+			"/images/projects/tushar-insights/visuals/Localization.png",
+			"/images/projects/tushar-insights/visuals/Blogs.png",
+			"/images/projects/tushar-insights/visuals/Blog.png",
+			"/images/projects/tushar-insights/visuals/Interactions.png",
+			"/images/projects/tushar-insights/visuals/About.png",
+			"/images/projects/tushar-insights/visuals/Contact.png",
+		],
+	},
+
+	{
 		title: "NexusFlow Landing Page",
 		type: "Personal Project",
 		duration: "3 days",
