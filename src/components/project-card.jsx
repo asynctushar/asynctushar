@@ -1,14 +1,18 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const ProjectCard = ({ project }) => {
     return (
         <div
             className="group rounded-lg border bg-card shadow-sm transition hover:shadow-md flex flex-col"
         >
-            <img
+            <Image
+                width={700}
+                height={700}
                 src={project.thumbnail}
                 alt={project.title}
+                loading="lazy"
                 className="w-full aspect-video object-cover rounded-t-lg"
             />
             <div className="p-6 flex-1 flex flex-col">

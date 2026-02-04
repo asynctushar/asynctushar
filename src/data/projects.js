@@ -2,6 +2,7 @@ const projects = [
 	{
 		title: "SpotHotel",
 		type: "Personal Project",
+		duration: "4 weeks",
 		featured: true,
 		description: {
 			short: "A full-stack hotel booking platform with real-time availability and secure payments.",
@@ -36,8 +37,43 @@ const projects = [
 		resources: null,
 	},
 	{
+		title: "Tushar Insights",
+		type: "Personal Project",
+		duration: "3 weeks",
+		featured: true,
+		description: {
+			short: "A full-stack blogging platform with authentication, comments, and role-based content management.",
+			long:
+				"Tushar Insights is a full-stack blogging platform built to explore scalable content management and modern web architecture. It supports multi-language blogs, SEO-optimized metadata, user authentication, and an interactive commenting system with replies and reactions. Admins can manage posts, users, and moderation workflows, while readers enjoy a fast, responsive reading experience. Built with Next.js, Strapi, and TypeScript, the project emphasizes performance, clean architecture, and real-world CMS workflows.",
+		},
+		tech: ["Next.js", "TypeScript", "Strapi", "PostgreSQL", "Tailwind CSS", "Redux Toolkit", "Shadcn"],
+		features: [
+			"SEO-optimized blog pages with dynamic metadata",
+			"Multi-language content support",
+			"Authentication with role-based access control",
+			"Nested comments with replies and reactions",
+			"Admin dashboard for content and user management",
+		],
+		liveUrl: "https://tushar-insights.vercel.app",
+		githubUrl: "https://github.com/asynctushar/tushar-insights",
+		thumbnail: "/images/projects/tushar-insights/Thumbnail.png",
+		videoUrl: null,
+		details: "/projects/tushar-insights",
+		visuals: [
+			"/images/projects/tushar-insights/visuals/Home.png",
+			"/images/projects/tushar-insights/visuals/Localization.png",
+			"/images/projects/tushar-insights/visuals/Blogs.png",
+			"/images/projects/tushar-insights/visuals/Blog.png",
+			"/images/projects/tushar-insights/visuals/Interactions.png",
+			"/images/projects/tushar-insights/visuals/About.png",
+			"/images/projects/tushar-insights/visuals/Contact.png",
+		],
+	},
+
+	{
 		title: "NexusFlow Landing Page",
 		type: "Personal Project",
+		duration: "3 days",
 		featured: true,
 		description: {
 			short: "A modern, animated SaaS landing page with advanced interactions and mobile optimization.",
@@ -70,6 +106,7 @@ const projects = [
 	{
 		title: "TrackZone",
 		type: "Personal Project",
+		duration: "2 weeks",
 		featured: true,
 		description: {
 			short: "An event management tool designed for seamless scheduling across different time zones.",
@@ -114,6 +151,7 @@ const projects = [
 	{
 		title: "Chadbot",
 		type: "Freelance Project",
+		duration: "2 weeks",
 		description: {
 			short: "A platform to build and chat with custom AI agents..",
 			long:
@@ -152,6 +190,7 @@ const projects = [
 	},
 	{
 		title: "MINE SAT PLATFORM",
+		duration: "3 weeks",
 		type: "Freelance Project",
 		description: {
 			short: "An online quiz and exam practice platform with real-time assessments.",
@@ -183,6 +222,7 @@ const projects = [
 	{
 		title: "Viste Guest",
 		type: "Freelance Project",
+		duration: "8 weeks",
 		description: {
 			short: "A customer service platform for Viste users, featuring AI assistance and guest tools.",
 			long:
@@ -222,6 +262,7 @@ const projects = [
 	{
 		title: "Instabook",
 		type: "Personal Project",
+		duration: "3 weeks",
 		description: {
 			short: "A social media platform with posts, comments, reactions, and real-time chat.",
 			long:
@@ -255,6 +296,7 @@ const projects = [
 	{
 		title: "Ecommerce Website",
 		type: "Personal Project",
+		duration: "4 weeks",
 		description: {
 			short: "A modern e-commerce platform with secure payments and advanced product browsing.",
 			long:

@@ -45,10 +45,24 @@ export const metadata = {
 
 const ProjectsPage = () => {
 	return (
-		<section className="container mx-auto py-16">
-			<h1 className="mb-12 text-center text-4xl font-bold">Projects</h1>
+		<section className="container mx-auto">
+			{/* Header (owns vertical spacing) */}
+			<div className="text-center flex flex-col gap-3 py-20">
+				<h1 className="text-4xl md:text-5xl font-bold">Projects</h1>
 
-			<div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+				<p className="text-base md:text-lg text-muted-foreground">
+					A collection of my work building modern web applications
+				</p>
+
+				<p className="max-w-2xl mx-auto text-sm md:text-base text-muted-foreground">
+					Focused on performance, clean UI, and scalable front-end architecture.
+					Most projects are built with real-world constraints in mind.
+				</p>
+			</div>
+
+
+			{/* Grid (NO vertical padding) */}
+			<div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
 				{projects.map((project, idx) => (
 					<ProjectCard key={idx} project={project} />
 				))}
@@ -56,5 +70,6 @@ const ProjectsPage = () => {
 		</section>
 	);
 };
+
 
 export default ProjectsPage;
