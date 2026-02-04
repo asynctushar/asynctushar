@@ -157,8 +157,8 @@ const Project = async ({ params }) => {
 											</CarouselItem>
 										))}
 									</CarouselContent>
-									<CarouselPrevious className="left-4 h-10 w-10 bg-background/90 hover:bg-background border-2" />
-									<CarouselNext className="right-4 h-10 w-10 bg-background/90 hover:bg-background border-2" />
+									<CarouselPrevious className="left-4 h-10 w-10 bg-primary/90 dark:bg-primary/90 hover:bg-primary dark:hover:bg-primary border-2 text-background dark:text-foreground hover:text-background" />
+									<CarouselNext className="right-4 h-10 w-10 bg-primary/90 dark:bg-primary/90 hover:bg-primary dark:hover:bg-primary border-2 text-background dark:text-foreground hover:text-background" />
 								</Carousel>
 							</section>
 						)}
@@ -386,7 +386,7 @@ const Project = async ({ params }) => {
 									</div>
 								)}
 							</div>
-						</div>						
+						</div>
 					</div>
 				</div>
 			</div>
