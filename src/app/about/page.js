@@ -311,7 +311,7 @@ const AboutPage = () => {
 			</section>
 
 			{/* Experience */}
-			<section id="experience" className="container mx-auto px-4 py-16 max-w-5xl min-h-[calc(100vh-4rem)]">
+			<section id="experience" className="container mx-auto px-4 py-40 max-w-5xl min-h-[calc(100vh-4rem)]">
 				<h2 className="text-3xl font-semibold mb-8 text-center">Experience</h2>
 				<div className="rounded-xl border bg-card p-8 shadow-sm hover:shadow-md transition-shadow">
 					<div className="flex items-start gap-4 mb-6">
