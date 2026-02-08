@@ -47,7 +47,7 @@ const ProjectsPage = () => {
 	return (
 		<section className="container mx-auto">
 			{/* Header (owns vertical spacing) */}
-			<div className="text-center flex flex-col gap-3 py-20">
+			<div className="text-center flex flex-col gap-3 py-18">
 				<h1 className="text-4xl md:text-5xl font-bold">Projects</h1>
 
 				<p className="text-base md:text-lg text-muted-foreground">
@@ -62,7 +62,7 @@ const ProjectsPage = () => {
 
 
 			{/* Grid (NO vertical padding) */}
-			<div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+			<div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 my-8">
 				{projects.map((project, idx) => (
 					<ProjectCard key={idx} project={project} />
 				))}
