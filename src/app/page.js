@@ -26,7 +26,7 @@ const HomePage = () => {
 	return (
 		<section className="min-h-[calc(100vh-4rem)] flex items-start justify-center px-4 pt-12 sm:pt-16 lg:pt-24">
 			<div className="container mx-auto max-w-7xl">
-				<div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+				<div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
 					{/* Left Content */}
 					<div className="space-y-5 sm:space-y-6">
 						{/* Available for Freelance Badge */}
