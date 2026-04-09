@@ -1,29 +1,60 @@
-# Hi there, I'm Tushar Biswas! 👋
+# Hi, I'm Tushar Biswas 👋
 
-🚀 **Passionate MERN Stack & Front-End Developer**
+🚀 Frontend-Focused MERN Stack Developer (React & Next.js)
 
-I'm a MERN stack developer with expertise in creating responsive, high-performance web applications. I bring a full-stack approach to my projects, blending back-end logic with polished front-end interfaces to build scalable, user-centered solutions.
-
-### 🛠️ **Tech Stack**
-
--   **Languages**: JavaScript, TypeScript
--   **Front-End**: React, Next.js, Redux Toolkit, Tailwind CSS, Material UI, Shadcn, HTML/CSS
--   **Back-End**: Node.js, Express.js, MongoDB
--   **Tools & Services**: Git, VSCode, Firebase, Stripe, Vercel
-
-### 🔥 **Current Focus**
-
--   **Exploring Advanced Web Performance**: Optimizing apps with Next.js for speed and scalability
--   **Creating Engaging Interfaces**: Building with Shadcn and Material UI for smooth, intuitive user experiences
-
-### 📊 **GitHub Stats**
-
-![Tushar's GitHub stats](https://github-readme-stats.vercel.app/api?username=asynctushar&show_icons=true&theme=tokyonight)
-
-### 💡 **Fun Fact**
-
-I'm a continuous learner who loves experimenting with new web technologies and bringing ideas to life with code.
+I build fast, responsive, and scalable web applications with a strong focus on clean UI and smooth user experience.
 
 ---
 
-Thanks for visiting my profile! Let's build something impactful together. ✨
+## 💡 What I Do
+
+I help turn ideas into real products — whether it's a SaaS dashboard, a modern web app, or improving an existing project.
+
+- ⚡ Fast and responsive frontend development  
+- 🎯 Clean, user-friendly UI/UX  
+- 📱 Mobile-first, fully responsive design  
+- 🔧 Scalable and maintainable code  
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**  
+React • Next.js • TypeScript • Tailwind CSS • Shadcn UI • Material UI  
+
+**Backend**  
+Node.js • Express.js • MongoDB • REST APIs  
+
+**Tools**  
+Git • Firebase • Stripe • Vercel  
+
+---
+
+## 🔥 Featured Work
+
+Check out my pinned repositories below — they include real-world projects, live demos, and clean code.
+
+---
+
+## 🌐 Portfolio & Work
+
+🔗 Portfolio: https://asynctushar.vercel.app
+💼 Upwork Profile: https://www.upwork.com/freelancers/asynctushar
+
+---
+
+## 💼 Open to Work
+
+I'm currently open to freelance opportunities, especially frontend-heavy projects using React and Next.js.
+
+If you have a project in mind, feel free to explore my work or reach out via Upwork.
+
+---
+
+## 📊 GitHub Stats
+
+![Tushar's GitHub stats](https://github-readme-stats.vercel.app/api?username=asynctushar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+
+---
+
+✨ Thanks for visiting my profile — I appreciate your time!
