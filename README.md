@@ -38,7 +38,7 @@ Check out my pinned repositories below — they include real-world projects, liv
 
 ## 🌐 Portfolio & Work
 
-🔗 Portfolio: https://asynctushar.vercel.app
+🔗 Portfolio: https://asynctushar.vercel.app  
 💼 Upwork Profile: https://www.upwork.com/freelancers/asynctushar
 
 ---
