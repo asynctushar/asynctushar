@@ -53,7 +53,7 @@ If you have a project in mind, feel free to explore my work or reach out via Upw
 
 ## 📊 GitHub Stats
 
-![Tushar's GitHub stats](https://github-readme-stats.vercel.app/api?username=asynctushar&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+![Tushar's GitHub stats](https://awesome-github-stats.azurewebsites.net/user-stats/asynctushar?cardType=level&theme=github-dark&fontFamily=Roboto&preferLogin=false)
 
 ---
 
