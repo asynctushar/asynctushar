@@ -17,8 +17,8 @@ I take projects from idea to shipped product. Lately that's meant SaaS dashboard
 
 ## Stack
 
-**Frontend** — React · Next.js · TypeScript · Tailwind CSS · Shadcn UI · Material UI 
-**Backend** — Node.js · Express.js · MongoDB · REST APIs
+**Frontend** — React · Next.js · TypeScript · Tailwind CSS · Shadcn UI · Material UI  
+**Backend** — Node.js · Express.js · MongoDB · REST APIs  
 **Tools** — Git · Firebase · Stripe · Vercel
 
  
