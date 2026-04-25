@@ -1,4 +1,4 @@
-# Hi, I'm Tushar 👋
+# Hi, I'm Tushar
 
 I'm a frontend-focused MERN stack developer. I spend most of my time in React and Next.js, building things that actually look good and work well — not just technically correct, but genuinely enjoyable to use.
 
@@ -17,7 +17,7 @@ I take projects from idea to shipped product. Lately that's meant SaaS dashboard
 
 ## Stack
 
-**Frontend** — React · Next.js · TypeScript · Tailwind CSS · Shadcn UI · Material UI
+**Frontend** — React · Next.js · TypeScript · Tailwind CSS · Shadcn UI · Material UI 
 **Backend** — Node.js · Express.js · MongoDB · REST APIs
 **Tools** — Git · Firebase · Stripe · Vercel
 
